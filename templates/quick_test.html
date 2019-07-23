@@ -1,0 +1,347 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        $(function () {
+
+            $("input[name='optionsRadios']").click(function () {
+                if (1 == $(this).val()) {
+                    $("#form-data").addClass("active show")
+                    $("#x-www-form-urlencoded").removeClass("active show")
+                    $("#raw1").removeClass("active show")
+                } else if (2 == $(this).val()) {
+                    $("#form-data").addClass("active show")
+                    $("#x-www-form-urlencoded").removeClass("active show")
+                    $("#raw1").removeClass("active show")
+                }
+                else {
+                    $("#raw1").addClass("active show")
+                    $("#x-www-form-urlencoded").removeClass("active show")
+                    $("#form-data").removeClass("active show")
+                }
+            })
+
+        })
+    </script>
+{% endblock %}
+
+
+
+
+
+
+{% block title %}
+    <div class="page-header">
+        <h3 class="page-title">
+            快速测试
+        </h3>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/index">Index</a></li>
+                <li class="breadcrumb-item active" aria-current="page">快速测试</li>
+            </ol>
+        </nav>
+    </div>
+{% endblock %}
+<!-- partial -->
+
+
+{% block header %}
+
+    <table>
+        <tbody id="modo" style="display: none;">
+        <tr>
+            <td>
+                <div class="input-group col-sm-18">
+                    <input type="text" class="form-control" name="input1" id="input1">
+                </div>
+
+            </td>
+            <td>
+                <div class="input-group col-sm-18">
+                    <input type="text" class="form-control" name="input2" id="input2">
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+{#    <form action="/quest_test_action/" method="post">#}
+
+        <div class="col-12 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <!--url -->
+                    <h4 class="card-title">Inline forms</h4>
+                    <p class="card-description">
+                        Use the <code>.form-inline</code> class to display a series of labels, form controls, and
+                        buttons on
+                        a single horizontal row
+                    </p>
+
+
+                    <div class="form-inline">
+                        <!--select-->
+                        <div class="input-group-prepend">
+                            <div class="form-group">
+                                <select class="form-inline form-control mb-2 mr-sm-1" id="select_request_raw"
+                                        name="request_raw">
+                                    <option value="">请选择</option>
+                                    <option value="POST">POST</option>
+                                    <option value="GET">GET</option>
+                                    <option value="PUT">PUT</option>
+                                    <option value="DELETE">DELETE</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!--input-->
+                        <div class="input-group mb-2 mr-sm-1 col-sm-8">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">url</div>
+                            </div>
+                            <input type="text" class="form-control" id="input_url"
+                                   placeholder="input_url" name="input_url">
+                        </div>
+
+                        <!--button-->
+                        <button type="button" onclick="return sbm1()" class="btn btn-gradient-primary mb-2">Submit</button>
+                        {% csrf_token %}
+                        <!--url结束-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-lg-12 grid-margin stretch-card">
+            <div class="card">
+
+                <div class="card-body">
+                    <div>
+                        <button id="add_row" type="button" class="btn btn-gradient-success">添加行</button>
+                        <button id="dele_row" type="button" class="btn btn-gradient-info">删除行</button>
+                    </div>
+
+                    <table class="table table-bordered">
+                        <tbody id="test">
+                        <tr>
+                            <th>
+                                Key
+                            </th>
+                            <th>
+                                Value
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="input-group col-sm-18">
+                                    <input type="text" class="form-control" name="input1" value="Content-Type" id="input1">
+                                </div>
+
+                            </td>
+                            <td>
+                                <div class="input-group col-sm-18">
+                                    <input type="text" class="form-control" name="input2" value="application/json" id="input2">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="input-group col-sm-18">
+                                    <input type="text" class="form-control" name="input1" value="Cache-Control" id="input1">
+                                </div>
+
+                            </td>
+                            <td>
+                                <div class="input-group col-sm-18">
+                                    <input type="text" class="form-control" name="input2" value="no-cache" id="input2">
+                                </div>
+                            </td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-12 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+
+                    <h4 class="card-title">选择Body</h4>
+
+
+                    <div class="input-group-prepend">
+
+
+                        <div class="form-check form-check-success mb-2 mr-sm-4">
+                            <label class="form-check-label">
+                                <input id="aa" type="radio" class="form-check-input" name="optionsRadios"
+                                       id="optionsRadios1"
+                                       value="1">
+                                form-data
+                            </label>
+                        </div>
+
+                        <div class="form-check form-check-info mb-2 mr-sm-4">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1"
+                                       value="2">
+                                x-www-form-urlencoded
+                            </label>
+                        </div>
+
+                        <div class="form-check form-check-danger mb-2 mr-sm-4">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1"
+                                       value="3">
+                                raw
+                            </label>
+                        </div>
+                    </div>
+
+
+                    <div id="myTabContent" class="tab-content">
+                        <!--form-data-->
+                        <div class="tab-pane fade in active" id="form-data">
+                            <div>
+                                <button id="add_row" type="button" class="btn btn-gradient-success">添加行</button>
+                                <button id="dele_row" type="button" class="btn btn-gradient-info">删除行</button>
+                            </div>
+
+                            <table class="table table-bordered">
+                                <tbody id="test">
+                                <tr>
+                                    <th>
+                                        Key
+                                    </th>
+                                    <th>
+                                        Value
+                                    </th>
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!--x-www-form-urlencoded-->
+                        <div class="tab-pane fade in active" id="x-www-form-urlencoded">
+                            <div>
+                                <button id="add_row" type="button" class="btn btn-gradient-success">添加行</button>
+                                <button id="dele_row" type="button" class="btn btn-gradient-info">删除行</button>
+                            </div>
+
+                            <table class="table table-bordered">
+                                <tbody id="test">
+                                <tr>
+                                    <th>
+                                        Key
+                                    </th>
+                                    <th>
+                                        Value
+                                    </th>
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!--x-www-form-urlencoded-->
+                        <div class="tab-pane fade in active" id="raw1">
+                            <div class="form-group">
+                                <textarea class="form-control" id="raw" rows="20"  cols="120" name="explain"></textarea>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+         <div class="col-12 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+
+                    <h4 class="card-title">返回值</h4>
+
+                            <div class="form-group">
+                                <textarea class="form-control" id="11" rows="20" name="explain"></textarea>
+                            </div>
+                        </div>
+            </div>
+        </div>
+
+
+
+    </form>
+
+
+
+    <script>
+
+        $("#add_row").click(add_row)
+        $("#dele_row").click(dele_row)
+
+        //添加行
+        function add_row() {
+            var mode_tr = $("#modo tr:first").clone();
+            $("#test").append(mode_tr);
+
+        }
+
+        //删除行
+        function dele_row() {
+            var row = $("#test tr").length
+            if (row != 1) {
+                var tr = $("#test tr:last");
+                $(tr).remove();
+            }
+
+        }
+        function sbm1(){
+            var request_raw = $("#select_request_raw").val();
+            var input_url = $("#input_url").val();
+
+            var input1_list =[];
+            $("input[name='input1']").each(function(){
+                if ($(this).val() != ''){
+                    input1_list.push($(this).val());
+                }
+            });
+
+            var input2_list =[];
+            $("input[name='input2']").each(function(){
+                if ($(this).val() != ''){
+                    input2_list.push($(this).val());
+                }
+            });
+
+            var raw = $("#raw").val();
+            $.ajax({
+                url:'/quest_test_action_ajax/',
+
+                data:{
+                    "request_raw":request_raw,
+                    "input_url":input_url,
+                    "input1": input1_list,
+                    "input2": input2_list,
+                    "raw": raw,
+                },
+                type:'post',
+                success:function (ret) {
+                    $('#11').html(ret)
+                }
+            });
+            return false;
+        }
+
+    </script>
+
+
+{% endblock %}

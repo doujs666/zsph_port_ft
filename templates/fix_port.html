@@ -1,0 +1,158 @@
+{% extends 'base.html' %}
+
+{% block title %}
+
+    <div class="page-header">
+        <h3 class="page-title">
+            编辑接口
+        </h3>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/index">Index</a></li>
+                <li class="breadcrumb-item active" aria-current="page">编辑接口</li>
+            </ol>
+        </nav>
+    </div>
+{% endblock %}
+<!-- partial -->
+
+{% block header %}
+    <div class="col-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">What's the matter with your</h4>
+                <p class="card-description">
+                    mind and your sign
+                </p>
+
+                    <!--选择项目 -->
+                    <div class="form-group">
+                        <label for="exampleSelectGender">选择项目</label>
+                        <select class="form-control" id="choose_project" name="choose_project">
+                            <option>请选择</option>
+                            {% for project in project_list %}
+                                <option value={{ project.id }}>{{ project.name }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputName1">接口名称</label>
+                        <input type="text" class="form-control" id="port_name" placeholder="Name"
+                               name="port_name" value="{{ fix_port_data.port_name }}">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputEmail3">url</label>
+                        <input type="text" class="form-control"  placeholder="Type"
+                               name="url" id="url" value="{{ fix_port_data.url }}">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleSelectGender">请求方式</label>
+                        <select class="form-control" id="select_request_raw" name="select_request_raw">
+                            <option>请选择</option>
+                            <option value="POST">POST</option>
+                            <option value="GET">GET</option>
+                            <option value="PUT">PUT</option>
+                            <option value="DELETE">DELETE</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                    <label for="exampleInputEmail3">data</label>
+                    <button id="add_row" type="button" class="btn btn-gradient-success">添加行</button>
+                    <button id="dele_row" type="button" class="btn btn-gradient-info">删除行</button>
+                    <table class="table table-bordered">
+                        <tbody id="test">
+                        <tr>
+                            <th>
+                                Key
+                            </th>
+                        </tr>
+                        {% for i in new_keys %}
+                            <tr>
+                                <td>
+                                    <input value="{{ i }} " name="input1">
+                                </td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                    </div>
+
+
+
+                    <div class="form-group">
+                    <button type="button" onclick="return sbm1()" class="btn btn-gradient-primary mr-2">Submit</button>
+                    <button class="btn btn-light"><a href="/cancel_action">Cancel</a></button>
+                    </div>
+                    {% csrf_token %}
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+        <script>
+
+        var trHTML = "<tr><td><input name='input1'></input></td></tr>"
+
+
+        $("#add_row").click(add_row)
+        $("#dele_row").click(dele_row)
+
+        //添加行
+        function add_row() {
+            $("#test").append(trHTML);
+        }
+
+        //删除行
+        function dele_row() {
+            var row = $("#test tr").length
+            if (row != 1) {
+                var tr = $("#test tr:last");
+                $(tr).remove();
+            }
+        }
+
+        function sbm1(){
+            var project_id = $("#choose_project").val();
+            var port_name = $("#port_name").val();
+            var url = $("#url").val();
+            var request_raw = $("#select_request_raw").val();
+            var input1_list =[];
+            $("input[name='input1']").each(function(){
+                if ($(this).val() != ''){
+                    input1_list.push($(this).val());
+                }
+            });
+
+
+
+            $.ajax({
+                url:'/update_port_action_ajax/?id={{ fix_port_data.id }}',
+
+                data:{
+                    "project_id":project_id,
+                    "port_name":port_name,
+                    "url": url,
+                    "request_raw": request_raw,
+                    "input1": input1_list,
+                },
+                type:'post',
+                success:function (ret) {
+                    alert("保存成功")
+                    location = "/port_manage"
+                }
+            });
+            return false;
+        }
+
+        </script>
+
+
+
+{% endblock %}
+

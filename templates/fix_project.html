@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+
+{% block title %}
+
+    <div class="page-header">
+        <h3 class="page-title">
+            编辑项目
+        </h3>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/index">Index</a></li>
+                <li class="breadcrumb-item active" aria-current="page">编辑项目</li>
+            </ol>
+        </nav>
+    </div>
+{% endblock %}
+<!-- partial -->
+
+{% block header %}
+    <div class="col-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">What's the matter with your</h4>
+                <p class="card-description">
+                    mind and your sign
+                </p>
+                <form class="forms-sample" method="post" action="/update_project_action/?id={{ fix_project_data.id }}">
+                    <div class="form-group">
+                        <label for="exampleInputName1">项目名称</label>
+                        <input type="text" class="form-control" id="exampleInputName1" placeholder="Name"
+                               name="project_name" value="{{ fix_project_data.name }}">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail3">项目类型</label>
+                        <input type="text" class="form-control" id="exampleInputEmail3" placeholder="Type"
+                               name="project_type" value="{{ fix_project_data.type }}">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword4">项目版本</label>
+                        <input type="text" class="form-control" id="exampleInputPassword4" placeholder="version"
+                               name="project_version" value="{{ fix_project_data.versions }}">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword4">接口数量</label>
+                        <input type="text" class="form-control" id="exampleInputPassword4" placeholder="count"
+                               name="port_count" value="{{ fix_project_data.port_count }}">
+                    </div>
+
+                    <!--IP地址 -->
+                    <div class="form-group">
+                        <label for="exampleInputPassword4">项目地址</label>
+                        <input type="text" class="form-control" id="exampleInputPassword4" placeholder="host"
+                               name="project_host" value="{{ fix_project_data.host }}">
+                    </div>
+
+                    <!--选择数据库 -->
+                    <div class="form-group">
+                        <label for="exampleSelectGender">数据库</label>
+                        <select class="form-control" id="exampleSelectGender" name="sql_address">
+                            <option>请选择</option>
+                            {% for mysql_page in mysql_list %}
+                            <option value={{ mysql_page.id }}>{{ mysql_page.name }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+
+                    <!--选择mongodb -->
+                    <div class="form-group">
+                        <label for="exampleSelectGender">Mongodb</label>
+                        <select class="form-control" id="exampleSelectGender" name="mongodb_address">
+                            <option>请选择</option>
+                            {% for mongodb in mongodb_list %}
+                            <option value={{ mongodb.id }}>{{ mongodb.name }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+
+                    <!--文本框 -->
+                    <div class="form-group">
+                        <label for="exampleTextarea1">说明</label>
+                        <textarea class="form-control" id="exampleTextarea1" rows="4" name="explain"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-gradient-primary mr-2">Submit</button>
+                    <button class="btn btn-light"><a href="/cancel_action">Cancel</a></button>
+                    {% csrf_token %}
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

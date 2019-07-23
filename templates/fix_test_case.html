@@ -1,0 +1,727 @@
+{% extends 'base.html' %}
+{% load myfilter %}
+{% block head %}
+    <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+{% endblock %}
+
+
+
+
+
+{% block title %}
+    <div class="page-header">
+        <h3 class="page-title">
+            测试用例
+        </h3>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/index">Index</a></li>
+                <li class="breadcrumb-item active" aria-current="page">测试用例</li>
+            </ol>
+        </nav>
+    </div>
+{% endblock %}
+<!-- partial -->
+
+
+{% block header %}
+
+    <div class="col-12 grid-margin">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">前置条件</h4>
+                <form class="form-sample">
+                    <p class="card-description">
+                        请求头
+                    </p>
+
+                    <!--第一行-->
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <div class="form-group row">
+                                <label class="col-sm-3 col-form-label">是否登录</label>
+                                <div class="col-sm-4">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="init_login"
+                                                   value="0">
+                                            是
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-5">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="init_login"
+                                                   value="1">
+                                            否
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--提交按钮-->
+                        <div class="col-md-6">
+                            <div class="form-group row">
+                                <div class="col-sm-3">
+                                    <button type="button" id="submit" onclick="return init_submit()"
+                                            class="btn btn-gradient-success btn-rounded btn-fw">提交
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--第二行-->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group row">
+                                <label class="col-sm-3 col-form-label">手机号</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" id="init_mobile">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group row">
+                                <label class="col-sm-3 col-form-label">密码</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" id="init_password">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--第一行结束-->
+
+                    <!--第三行-->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group row">
+                                <label class="col-sm-3 col-form-label">选择项目</label>
+                                <div class="col-sm-9">
+                                    <select class="form-control" id="init_select_manage">
+                                        <option>请选择</option>
+                                        {% for project in project_list %}
+                                            <option value={{ project.host }}>{{ project.name }}</option>
+                                        {% endfor %}
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group row">
+                                <label class="col-sm-3 col-form-label">选择接口</label>
+                                <div class="col-sm-9">
+                                    <select class="form-control" onchange="return_init_data()" id="init_select_port">
+                                        <option>请选择</option>
+                                        {% for port in port_list %}
+                                            <option value={{ port.id }}>{{ port.port_name }}</option>
+                                        {% endfor %}
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--第四行-->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group row">
+                                <label class="col-sm-3 col-form-label">url</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" id="init_url" value="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+
+                <p class="card-description">
+                    参数
+                </p>
+                <table class="table table-bordered">
+                    <tbody id="data_table">
+                    <tr>
+                        <th>
+                            key
+                        </th>
+                        <th>
+                            value
+                        </th>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <p class="card-description">
+                    返回
+                </p>
+                <div class="form-group">
+                    <textarea class="form-control" id="text" rows="4"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="col-12 grid-margin">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">测试用例</h4>
+                <form class="form-sample">
+                    <p class="card-description">
+                        请求头
+                    </p>
+
+                    <!--第一行-->
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <div class="form-group row">
+                                <label class="col-sm-3 col-form-label">是否登录</label>
+                                <div class="col-sm-4">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input type="radio"
+                                                    {% if login_status == 0 %}
+                                                   checked="true"
+                                                    {% endif %}
+                                                   class="form-check-input" name="select_login"
+                                                   value="0">
+                                            是
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-5">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input type="radio"
+                                                    {% if login_status == 1 %}
+                                                   checked="true"
+                                                    {% endif %}
+                                                   class="form-check-input" name="select_login"
+                                                   value="1">
+                                            否
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--提交按钮-->
+                        <div class="col-md-6">
+                            <div class="form-group row">
+                                <div class="col-sm-4">
+                                    <button type="button" id="submit" onclick="return sbm1()"
+                                            class="btn btn-gradient-success btn-rounded btn-fw">开始验证
+                                    </button>
+                                </div>
+                                <div class="col-sm-4">
+                                    <button type="button" id="add_row"
+                                            class="btn btn-gradient-danger btn-rounded btn-fw">添加验证
+                                    </button>
+                                </div>
+                                <div class="col-sm-3">
+                                    <button type="button" id="dele_row"
+                                            class="btn btn-gradient-info btn-rounded btn-fw">删除验证
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--第二行-->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group row">
+                                <label class="col-sm-3 col-form-label">手机号</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" id="mobile" value="{{ mobile }}">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group row">
+                                <label class="col-sm-3 col-form-label">密码</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" id="password">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--第一行结束-->
+
+                    <!--第三行-->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group row">
+                                <label class="col-sm-3 col-form-label">选择项目</label>
+                                <div class="col-sm-9">
+                                    <select class="form-control" id="select_project">
+                                        <option>请选择</option>
+                                        {% for project in new_project_list %}
+                                            <option value={{ project.pk }}
+                                                            {% if project.pk == project_id %}
+                                                                selected='true'
+                                                            {% endif %}
+                                            >{{ project.fields.name }}</option>
+                                        {% endfor %}
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group row">
+                                <label class="col-sm-3 col-form-label">选择接口</label>
+                                <div class="col-sm-9">
+                                    <select class="form-control" onchange="return_data()" id="select_port">
+                                        <option>请选择</option>
+                                        {% for port in new_port_list %}
+                                            <option value={{ port.pk }}
+                                                            {% if port.pk == port_id %}
+                                                                selected='true'
+                                                            {% endif %}
+                                            >{{ port.fields.port_name }}</option>
+                                        {% endfor %}
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--第四行-->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group row">
+                                <label class="col-sm-3 col-form-label">用例名称</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" id="case_name" value="{{ case_name }}">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group row">
+                                <label class="col-sm-3 col-form-label">url</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" id="url" value= {{ port_url }}>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+
+                <p class="card-description">
+                    参数
+                </p>
+
+                <table class="table table-bordered">
+                    <tbody id="data_table1">
+                    <tr>
+                        <th>
+                            key
+                        </th>
+                        <th>
+                            value
+                        </th>
+                    </tr>
+                    </tbody>
+                        {% for i,j in payload.items %}
+                            <tr>
+                            <td>
+                                <input value="{{ i }}" name="data_key">
+                            </td>
+
+                            <td>
+                                <input value="{{ j }}" name="data_value">
+                            </td>
+                            </tr>
+                        {% endfor %}
+                </table>
+
+
+                <form class="col-form-label-sm">
+                    <p class="card-description">
+                        验证
+                    </p>
+                </form>
+
+
+                <table class="table table-bordered" id="assert_tb">
+                    <tbody>
+                    <tr>
+                        <th>
+                            输入
+                        </th>
+                        <th>
+                            判断
+                        </th>
+                        <th>
+                            选择
+                        </th>
+                        <th>
+                            验证
+                        </th>
+                        <th>
+                            是否通过
+                        </th>
+                    </tr>
+                    </tbody>
+
+                    {% for i in db_assert_list %}
+                        <tr>
+
+                            <td>
+                                <input value="{{ i.assert_input }}" name="assert_input">
+                            </td>
+
+                            <td>
+                                <select class="form-control" name="assert">
+                                    <option>请选择</option>
+                                    {% for select_assert in db_select_assert_list %}
+                                        <option value={{ select_assert }}
+                                                        {% if i.select_assert == select_assert %}
+                                                            selected='true'
+                                                        {% endif %}
+                                        >{{ select_assert }}</option>
+                                    {% endfor %}
+                                </select>
+                            </td>
+
+                            <td>
+                                <select class="form-control" name="assert_type">
+                                    <option>请选择</option>
+                                    {% for assert_type in db_assert_type_list %}
+                                        <option value={{ assert_type }}
+                                                        {% if i.assert_type == assert_type %}
+                                                            selected='true'
+                                                        {% endif %}
+                                        >{{ assert_type }}</option>
+                                    {% endfor %}
+                                </select>
+                            </td>
+
+                            <td>
+                                <input value="{{ i.assert_input1 }}" name="assert_input1">
+                            </td>
+
+
+                            <td id="result_assert{{ i.count }}">
+
+                            </td>
+
+
+                        </tr>
+                    {% endfor %}
+
+
+                </table>
+
+            </div>
+        </div>
+    </div>
+    </form>
+
+
+
+
+
+    <script>
+        $("#add_row").click(add_assert)
+        $("#dele_row").click(dele_row)
+
+        //添加行
+        function add_row(v, id_name) {
+            var trHTML = "<tr><td><input name='data_key' value='" + v + "'></input></td>" +
+                "<td><input name='data_value' value=''></input></td></tr>"
+            $("#" + id_name).append(trHTML);
+        }
+
+        //初始化参数表格
+        function dele_trHTML(del_id) {
+            v = "#" + del_id + " tr"
+            v1 = "#" + del_id + " tr:last"
+            var row = $(v).length
+            for (var i = 1; i < row; i++) {
+                var tr = $(v1);
+                $(tr).remove();
+            }
+        }
+
+        // 处理前置接口返回值
+        function return_init_data() {
+            var select_init_port = $("#init_select_port").val();
+            $.ajax({
+                url: '/get_init_port_value/',
+
+                data: {
+                    "select_init_port": select_init_port
+                },
+                type: 'post',
+                success: function (ret) {
+                    dele_trHTML('data_table')
+                    var get_keys = ret.keys
+                    var get_url = ret.url
+                    var arr = eval("(" + get_keys + ")");
+
+                    $(arr).each(function () {
+                        add_row(this, 'data_table');
+                    })
+                    {#$('#test').html(get_keys)#}
+                    $('#init_url').val(get_url)
+                }
+            });
+        }
+
+
+        // ajax处理前置条件
+        function init_submit() {
+            var select_login = $("input[name='init_login']:checked").val();
+            var mobile = $("#init_mobile").val();
+            var password = $("#init_password").val();
+            var select_port = $("#init_select_port").val();
+            var select_manage = $("#init_select_manage").val();
+            var port_url = $("#init_url").val();
+
+            var data_key_list = [];
+            $("input[name='data_key']").each(function () {
+                if ($(this).val() != '') {
+                    data_key_list.push($(this).val());
+                }
+            });
+
+            var data_value_list = [];
+            $("input[name='data_value']").each(function () {
+                if ($(this).val() != '') {
+                    data_value_list.push($(this).val());
+                }
+            });
+
+            $.ajax({
+                url: '/get_preposition_value/',
+
+                data: {
+                    "select_login": select_login,
+                    "mobile": mobile,
+                    "password": password,
+                    "select_port": select_port,
+                    "select_manage": select_manage,
+                    "port_url": port_url,
+                    "data_key_list": data_key_list,
+                    "data_value_list": data_value_list,
+                },
+                type: 'post',
+                success: function (ret) {
+
+
+                    $('#text').val(ret.message)
+                }
+            });
+            return false;
+        }
+
+
+        // 返回值
+        function sbm1() {
+            var select_login = $("input[name='select_login']:checked").val();
+            var mobile = $("#mobile").val();
+            var password = $("#password").val();
+            var select_port = $("#select_port").val();           // 选择接口
+            var select_project = $("#select_project").val();     // 选择项目
+            var port_url = $("#url").val();                      // 接口url
+            var case_name = $("#case_name").val();               // 用例名称
+
+            // 验证输入值
+            var assert_input = [];
+            $("input[name='assert_input']").each(function () {
+                if ($(this).val() != '') {
+                    assert_input.push($(this).val());
+                }
+            });
+
+            // 选择assert
+            var choose_assert = [];
+            $("select[name='assert']").each(function () {
+                if ($(this).val() != '') {
+                    choose_assert.push($(this).val());
+                }
+            });
+
+            // 选择验证类型
+            var assert_type = [];
+            $("select[name='assert_type']").each(function () {
+                if ($(this).val() != '') {
+                    assert_type.push($(this).val());
+                }
+            });
+
+            // 验证第二个值
+            var assert_input1 = [];
+            $("input[name='assert_input1']").each(function () {
+                if ($(this).val() != '') {
+                    assert_input1.push($(this).val());
+                }
+            });
+
+            // 接口key
+            var data_key_list = [];
+            $("input[name='data_key']").each(function () {
+                if ($(this).val() != '') {
+                    data_key_list.push($(this).val());
+                }
+            });
+
+            // 接口value
+            var data_value_list = [];
+            $("input[name='data_value']").each(function () {
+                if ($(this).val() != '') {
+                    data_value_list.push($(this).val());
+                }
+            });
+
+             var case_id = GetQueryString("id");
+
+            $.ajax({
+                url: '/update_test_case_action_ajax/',
+
+                data: {
+                    "case_id": case_id,
+                    "select_login": select_login,
+                    "mobile": mobile,
+                    "password": password,
+                    "select_port": select_port,
+                    "select_project": select_project,
+                    "port_url": port_url,
+                    "data_key_list": data_key_list,
+                    "data_value_list": data_value_list,
+                    "assert_input": assert_input,
+                    "choose_assert": choose_assert,
+                    "assert_type": assert_type,
+                    "assert_input1": assert_input1,
+                    "case_name": case_name,                    // 用例名称
+                },
+                type: 'post',
+                success: function (ret) {
+                    a= ret.assert_list
+                    for (var i = 0; i < a.length; i++) {
+                        var bv = a[i];
+                        if (bv == true) {
+                            assert_success(i)
+                        }
+                        else {
+                            assert_fail(i)
+                        }
+                    }
+                }
+            });
+            return false;
+        }
+
+
+        // 处理接口返回值
+        function return_data() {
+            var select_port = $("#select_port").val();
+            $.ajax({
+                url: '/get_port_value/',
+
+                data: {
+                    "select_port": select_port
+                },
+                type: 'post',
+                success: function (ret) {
+                    dele_trHTML('data_table1')
+                    var get_keys = ret.keys
+                    var get_url = ret.url
+                    var arr = eval("(" + get_keys + ")");
+
+                    $(arr).each(function () {
+                        add_row(this, 'data_table1');
+                    })
+                    $('#test').html(get_keys)
+                    $('#url').val(get_url)
+                }
+            });
+        }
+
+        //添加验证
+        function add_assert() {
+            var tr = '<tbody><tr id="assert_tr">\n' +
+                '                        <td>\n' +
+                '                            <input type="text" class="form-control" name="assert_input" value="">\n' +
+                '                        </td>\n' +
+                '                        <td>\n' +
+                '                            <select class="form-control "name="assert">\n' +
+                '                                <option value="">请选择</option>\n' +
+                '                                <option value="assertEqual">assertEqual</option>\n' +
+                '                                <option value="assertNotEqual">assertNotEqual</option>\n' +
+                '                            </select>\n' +
+                '                        </td>\n' +
+                '                        <td>\n' +
+                '                            <select class="form-control " name="assert_type">\n' +
+                '                                <option value="">请选择</option>\n' +
+                '                                <option value="data">data</option>\n' +
+                '                                <option value="mysql">mysql</option>\n' +
+                '                            </select>\n' +
+                '                        </td>\n' +
+                '                        <td>\n' +
+                '                            <input type="text" class="form-control" name="assert_input1" value="">\n' +
+                '                        </td>\n' +
+                '                        <td id="ret_assert">\n' +
+                '                        </td>\n' +
+                '                    </tr></tbody>'
+            $("#assert_tb").append(tr);
+        }
+
+
+        //assert处理通过
+        function assert_success(i) {
+            var tr =
+                '<label class="badge badge-success">通过</label>'
+            // 先删除后添加
+            $('#result_assert'+i).html('');
+            $("#result_assert"+i).append(tr);
+        }
+
+        //assert处理拒绝
+        function assert_fail(i) {
+            var tr = '<label class="badge badge-danger">失败</label>'
+            // 先删除后添加
+            $('#result_assert'+i).html('');
+            $("#result_assert"+i).append(tr);
+        }
+
+
+        //删除行
+        function dele_row() {
+            var row = $("#assert_tb tr").length
+            if (row != 1) {
+                var tr = $("#assert_tb tr:last");
+                $(tr).remove();
+            }
+        }
+
+        //获取case_id
+        function GetQueryString(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null) return unescape(r[2]);
+            return null;
+        }
+
+
+    </script>
+
+
+{% endblock %}
