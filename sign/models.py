@@ -72,7 +72,6 @@ class port_manage(models.Model):
 
 # 测试用例
 class test_case(models.Model):
-
     # 测试用例
     id = models.CharField(max_length=35, primary_key=True)
     test_case_name = models.CharField(max_length=15)  # 用例名称
@@ -109,5 +108,5 @@ class db_assert(models.Model):
     select_assert = models.CharField(max_length=30, blank=True, null=True, default=None)  # assert
     assert_type = models.CharField(max_length=30, blank=True, null=True, default=None)  # assert_type
     assert_input1 = models.CharField(max_length=100, blank=True, null=True, default=None)  # input1
-    test_case = models.ForeignKey(test_case, max_length=36, on_delete=models.CASCADE)      # 关联test_case
-    count = models.IntegerField(max_length=100)                                            # 计数
+    test_case = models.ForeignKey(test_case, max_length=36, on_delete=models.CASCADE)  # 关联test_case
+    count = models.IntegerField()  # 计数
