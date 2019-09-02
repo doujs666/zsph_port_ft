@@ -6,7 +6,7 @@ from django.shortcuts import get_object_or_404, render
 from django.contrib import auth
 from django.contrib.auth.decorators import login_required
 from sign.models import project_message
-# from sign.models import mysql_page
+from sign.models import mysql_page
 from sign.models import mongodb_page
 from sign.models import port_manage as port_manage_db
 from sign.models import Precondition

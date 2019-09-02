@@ -22,9 +22,9 @@ pip install https://github.com/darklow/django-suit/tarball/v2
 ```python
 DATABASES = {
     'default': {
-        # 'ENGINE': 'django.db.backends.sqlite3',
+        static
         # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        'ENGINE':'django.db.backends.mysql',     # 数据库类型，mysql
+        'ENGINE':static,     # 数据库类型，mysql
         'NAME':'api_test',            #  database名
         'USER':'root',               # 登录用户
         'PASSWORD':'123456',        #  登录用户名

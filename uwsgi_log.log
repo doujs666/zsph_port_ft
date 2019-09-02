@@ -1,0 +1,981 @@
+*** Starting uWSGI 2.0.18 (64bit) on [Tue Aug 27 14:56:32 2019] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-36) on 27 August 2019 03:56:03
+os: Linux-3.10.0-957.21.3.el7.x86_64 #1 SMP Tue Jun 18 16:35:19 UTC 2019
+nodename: instance-q8e0uqyg
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /abc
+writing pidfile to /abc/uwsgi_pid.log
+detected binary path: /usr/local/python3/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /abc
+your processes number limit is 7914
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+bind(): Cannot assign requested address [core/socket.c line 769]
+*** Starting uWSGI 2.0.18 (64bit) on [Tue Aug 27 15:11:25 2019] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-36) on 27 August 2019 03:56:03
+os: Linux-3.10.0-957.21.3.el7.x86_64 #1 SMP Tue Jun 18 16:35:19 UTC 2019
+nodename: instance-q8e0uqyg
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /abc
+writing pidfile to /abc/uwsgi_pid.log
+detected binary path: /usr/local/python3/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /abc
+your processes number limit is 7914
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+bind(): Cannot assign requested address [core/socket.c line 769]
+*** Starting uWSGI 2.0.18 (64bit) on [Tue Aug 27 16:24:05 2019] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-36) on 27 August 2019 03:56:03
+os: Linux-3.10.0-957.21.3.el7.x86_64 #1 SMP Tue Jun 18 16:35:19 UTC 2019
+nodename: instance-q8e0uqyg
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /abc
+writing pidfile to /abc/uwsgi_pid.log
+detected binary path: /usr/local/python3/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /abc
+your processes number limit is 7914
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+bind(): Cannot assign requested address [core/socket.c line 769]
+*** Starting uWSGI 2.0.18 (64bit) on [Tue Aug 27 16:25:41 2019] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-36) on 27 August 2019 03:56:03
+os: Linux-3.10.0-957.21.3.el7.x86_64 #1 SMP Tue Jun 18 16:35:19 UTC 2019
+nodename: instance-q8e0uqyg
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /abc
+writing pidfile to /abc/uwsgi_pid.log
+detected binary path: /usr/local/python3/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /abc
+your processes number limit is 7914
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:42189 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.0 (default, Aug 16 2019, 19:02:32)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-36)]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x1733c10
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 364600 bytes (356 KB) for 4 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1733c10 pid: 18300 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 18300)
+spawned uWSGI worker 1 (pid: 18301, cores: 1)
+spawned uWSGI worker 2 (pid: 18302, cores: 1)
+spawned uWSGI worker 3 (pid: 18303, cores: 1)
+spawned uWSGI worker 4 (pid: 18304, cores: 1)
+spawned uWSGI http 1 (pid: 18305)
+Not Found: /
+[pid: 18301|app: 0|req: 1/1] 47.98.217.72 () {40 vars in 916 bytes} [Tue Aug 27 08:27:21 2019] GET / => generated 5538 bytes in 207 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18301|app: 0|req: 2/2] 47.98.217.72 () {40 vars in 929 bytes} [Tue Aug 27 08:27:25 2019] GET /login/ => generated 3493 bytes in 44 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+Not Found: /static/css/style.css
+[pid: 18301|app: 0|req: 3/3] 47.98.217.72 () {40 vars in 871 bytes} [Tue Aug 27 08:27:25 2019] GET /static/css/style.css => generated 5616 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Tue Aug 27 18:36:28 2019] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-36) on 27 August 2019 03:56:03
+os: Linux-3.10.0-957.21.3.el7.x86_64 #1 SMP Tue Jun 18 16:35:19 UTC 2019
+nodename: instance-q8e0uqyg
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /abc
+writing pidfile to /abc/uwsgi_pid.log
+detected binary path: /usr/local/python3/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /abc
+your processes number limit is 7914
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (:8000).
+bind(): Address already in use [core/socket.c line 769]
+[pid: 18301|app: 0|req: 4/4] 58.135.84.149 () {40 vars in 937 bytes} [Tue Aug 27 10:36:48 2019] GET /login/ => generated 3493 bytes in 15 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+Not Found: /static/css/style.css
+[pid: 18302|app: 0|req: 1/5] 58.135.84.149 () {38 vars in 848 bytes} [Tue Aug 27 10:36:48 2019] GET /static/css/style.css => generated 5616 bytes in 208 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18301|app: 0|req: 5/6] 58.135.84.149 () {40 vars in 937 bytes} [Tue Aug 27 10:36:50 2019] GET /login/ => generated 3493 bytes in 16 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+Not Found: /static/css/style.css
+[pid: 18302|app: 0|req: 2/7] 58.135.84.149 () {38 vars in 848 bytes} [Tue Aug 27 10:36:50 2019] GET /static/css/style.css => generated 5616 bytes in 8 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18301|app: 0|req: 6/8] 58.135.84.149 () {40 vars in 937 bytes} [Tue Aug 27 10:36:51 2019] GET /login/ => generated 3493 bytes in 17 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+Not Found: /static/css/style.css
+[pid: 18302|app: 0|req: 3/9] 58.135.84.149 () {38 vars in 848 bytes} [Tue Aug 27 10:36:51 2019] GET /static/css/style.css => generated 5616 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/css/style.css
+[pid: 18301|app: 0|req: 7/10] 58.135.84.149 () {38 vars in 848 bytes} [Tue Aug 27 10:36:54 2019] GET /static/css/style.css => generated 5616 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/css/materialdesignicons.min.css.map
+[pid: 18301|app: 0|req: 8/11] 58.135.84.149 () {34 vars in 810 bytes} [Tue Aug 27 10:36:54 2019] GET /static/css/materialdesignicons.min.css.map => generated 5682 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/bootstrap.min.js.map
+[pid: 18304|app: 0|req: 1/12] 58.135.84.149 () {34 vars in 786 bytes} [Tue Aug 27 10:36:54 2019] GET /static/js/bootstrap.min.js.map => generated 5646 bytes in 329 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18301|app: 0|req: 9/13] 58.135.84.149 () {40 vars in 935 bytes} [Tue Aug 27 10:37:25 2019] GET /login/ => generated 3493 bytes in 15 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+Not Found: /static/css/style.css
+[pid: 18302|app: 0|req: 4/14] 58.135.84.149 () {38 vars in 846 bytes} [Tue Aug 27 10:37:25 2019] GET /static/css/style.css => generated 5616 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/bootstrap.min.js.map
+[pid: 18304|app: 0|req: 2/15] 58.135.84.149 () {34 vars in 785 bytes} [Tue Aug 27 10:37:26 2019] GET /static/js/bootstrap.min.js.map => generated 5646 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/css/materialdesignicons.min.css.map
+[pid: 18303|app: 0|req: 1/16] 58.135.84.149 () {34 vars in 809 bytes} [Tue Aug 27 10:37:26 2019] GET /static/css/materialdesignicons.min.css.map => generated 5682 bytes in 263 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/css/style.css
+[pid: 18301|app: 0|req: 10/17] 58.135.84.149 () {38 vars in 934 bytes} [Tue Aug 27 10:47:58 2019] GET /static/css/style.css => generated 5616 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /css/style.css
+[pid: 18301|app: 0|req: 11/18] 58.135.84.149 () {38 vars in 920 bytes} [Tue Aug 27 10:48:04 2019] GET /css/style.css => generated 5595 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'www.baidu.com'. You may need to add 'www.baidu.com' to ALLOWED_HOSTS.
+Bad Request: /http:/www.baidu.com/cache/global/img/gs.gif
+[pid: 18301|app: 0|req: 12/19] 80.82.70.187 () {28 vars in 420 bytes} [Tue Aug 27 13:14:54 2019] GET http://www.baidu.com/cache/global/img/gs.gif => generated 54791 bytes in 38 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '112.124.42.80:63435'. You may need to add '112.124.42.80' to ALLOWED_HOSTS.
+Bad Request: /http:/112.124.42.80:63435/
+[pid: 18301|app: 0|req: 13/20] 60.191.52.254 () {34 vars in 658 bytes} [Tue Aug 27 14:26:49 2019] HEAD http://112.124.42.80:63435/ => generated 55244 bytes in 42 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'www.baidu.com'. You may need to add 'www.baidu.com' to ALLOWED_HOSTS.
+Bad Request: /http:/www.baidu.com/cache/global/img/gs.gif
+[pid: 18301|app: 0|req: 14/21] 80.82.70.187 () {28 vars in 420 bytes} [Tue Aug 27 23:15:43 2019] GET http://www.baidu.com/cache/global/img/gs.gif => generated 54791 bytes in 57 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+[uwsgi-http key: www.baidu.com client_addr: 80.82.70.187 client_port: 14545] hr_write(): Connection reset by peer [plugins/http/http.c line 565]
+[pid: 18301|app: 0|req: 15/22] 58.135.84.149 () {40 vars in 937 bytes} [Wed Aug 28 01:47:47 2019] GET /login/ => generated 3493 bytes in 17 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+Not Found: /static/css/style.css
+[pid: 18302|app: 0|req: 5/23] 58.135.84.149 () {38 vars in 848 bytes} [Wed Aug 28 01:47:47 2019] GET /static/css/style.css => generated 5616 bytes in 13 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/bootstrap.min.js.map
+[pid: 18303|app: 0|req: 2/24] 58.135.84.149 () {34 vars in 786 bytes} [Wed Aug 28 01:47:48 2019] GET /static/js/bootstrap.min.js.map => generated 5646 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/css/materialdesignicons.min.css.map
+[pid: 18303|app: 0|req: 3/25] 58.135.84.149 () {34 vars in 810 bytes} [Wed Aug 28 01:47:48 2019] GET /static/css/materialdesignicons.min.css.map => generated 5682 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18301|app: 0|req: 16/26] 58.135.84.149 () {40 vars in 937 bytes} [Wed Aug 28 01:47:49 2019] GET /login/ => generated 3493 bytes in 26 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+Not Found: /static/css/style.css
+[pid: 18302|app: 0|req: 6/27] 58.135.84.149 () {38 vars in 848 bytes} [Wed Aug 28 01:47:49 2019] GET /static/css/style.css => generated 5616 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/css/materialdesignicons.min.css.map
+[pid: 18301|app: 0|req: 17/28] 58.135.84.149 () {34 vars in 810 bytes} [Wed Aug 28 01:47:49 2019] GET /static/css/materialdesignicons.min.css.map => generated 5682 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/bootstrap.min.js.map
+[pid: 18301|app: 0|req: 18/29] 58.135.84.149 () {34 vars in 786 bytes} [Wed Aug 28 01:47:49 2019] GET /static/js/bootstrap.min.js.map => generated 5646 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'www.baidu.com'. You may need to add 'www.baidu.com' to ALLOWED_HOSTS.
+Bad Request: /www.baidu.com:443
+[pid: 18301|app: 0|req: 19/30] 122.224.158.194 () {32 vars in 456 bytes} [Wed Aug 28 02:37:24 2019] CONNECT www.baidu.com:443 => generated 54795 bytes in 37 msecs (HTTP/1.0 400) 1 headers in 53 bytes (1 switches on core 0)
+Not Found: /
+[pid: 18301|app: 0|req: 20/31] 139.162.79.87 () {30 vars in 342 bytes} [Wed Aug 28 03:10:01 2019] GET / => generated 5538 bytes in 8 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'www.baidu.com'. You may need to add 'www.baidu.com' to ALLOWED_HOSTS.
+Bad Request: /http:/www.baidu.com/cache/global/img/gs.gif
+[pid: 18301|app: 0|req: 21/32] 80.82.70.187 () {28 vars in 420 bytes} [Wed Aug 28 09:19:29 2019] GET http://www.baidu.com/cache/global/img/gs.gif => generated 54791 bytes in 46 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+[uwsgi-http key: www.baidu.com client_addr: 80.82.70.187 client_port: 56514] hr_write(): Connection reset by peer [plugins/http/http.c line 565]
+[pid: 18301|app: 0|req: 22/33] 47.98.217.72 () {40 vars in 935 bytes} [Wed Aug 28 09:27:14 2019] GET /login/ => generated 3493 bytes in 17 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+Not Found: /static/css/style.css
+[pid: 18301|app: 0|req: 23/34] 47.98.217.72 () {38 vars in 846 bytes} [Wed Aug 28 09:27:14 2019] GET /static/css/style.css => generated 5616 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/bootstrap.min.js.map
+[pid: 18301|app: 0|req: 24/35] 47.98.217.72 () {34 vars in 784 bytes} [Wed Aug 28 09:27:14 2019] GET /static/js/bootstrap.min.js.map => generated 5646 bytes in 7 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/css/materialdesignicons.min.css.map
+[pid: 18303|app: 0|req: 4/36] 47.98.217.72 () {34 vars in 809 bytes} [Wed Aug 28 09:27:14 2019] GET /static/css/materialdesignicons.min.css.map => generated 5682 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'www.baidu.com'. You may need to add 'www.baidu.com' to ALLOWED_HOSTS.
+Bad Request: /http:/www.baidu.com/cache/global/img/gs.gif
+[pid: 18301|app: 0|req: 25/37] 80.82.70.187 () {28 vars in 420 bytes} [Wed Aug 28 19:20:49 2019] GET http://www.baidu.com/cache/global/img/gs.gif => generated 54791 bytes in 37 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+[uwsgi-http key: www.baidu.com client_addr: 80.82.70.187 client_port: 53646] hr_write(): Connection reset by peer [plugins/http/http.c line 565]
+Invalid HTTP_HOST header: 'instance-q8e0uqyg:8000'. You may need to add 'instance-q8e0uqyg' to ALLOWED_HOSTS.
+Bad Request: /
+[pid: 18301|app: 0|req: 26/38] 106.12.223.232 () {22 vars in 229 bytes} [Wed Aug 28 21:15:09 2019] GET / => generated 53958 bytes in 34 msecs (HTTP/1.0 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'instance-q8e0uqyg:8000'. You may need to add 'instance-q8e0uqyg' to ALLOWED_HOSTS.
+Bad Request: /nice ports,/Trinity.txt.bak
+[pid: 18301|app: 0|req: 27/39] 106.12.223.230 () {22 vars in 291 bytes} [Wed Aug 28 21:15:14 2019] GET /nice%20ports%2C/Tri%6Eity.txt%2ebak => generated 54302 bytes in 31 msecs (HTTP/1.0 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'instance-q8e0uqyg:8000'. You may need to add 'instance-q8e0uqyg' to ALLOWED_HOSTS.
+Bad Request: /
+[pid: 18301|app: 0|req: 28/40] 106.12.223.230 () {22 vars in 233 bytes} [Wed Aug 28 21:15:19 2019] OPTIONS / => generated 53986 bytes in 36 msecs (HTTP/1.0 400) 1 headers in 53 bytes (1 switches on core 0)
+[uwsgi-http key: instance-q8e0uqyg client_addr: 106.12.223.230 client_port: 24251] hr_write(): Connection reset by peer [plugins/http/http.c line 565]
+Invalid HTTP_HOST header: 'instance-q8e0uqyg:8000'. You may need to add 'instance-q8e0uqyg' to ALLOWED_HOSTS.
+Bad Request: /
+[pid: 18302|app: 0|req: 7/41] 106.12.223.230 () {22 vars in 232 bytes} [Wed Aug 28 21:15:20 2019] OPTIONS / => generated 53985 bytes in 43 msecs (RTSP/1.0 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'instance-q8e0uqyg:8000'. You may need to add 'instance-q8e0uqyg' to ALLOWED_HOSTS.
+Bad Request: /sip:nm
+[pid: 18301|app: 0|req: 29/42] 106.12.223.230 () {40 vars in 479 bytes} [Wed Aug 28 21:15:20 2019] OPTIONS sip:nm => generated 55242 bytes in 50 msecs (SIP/2.0 400) 1 headers in 52 bytes (1 switches on core 0)
+Not Found: /
+[pid: 18301|app: 0|req: 30/43] 106.12.223.230 () {24 vars in 256 bytes} [Wed Aug 28 21:15:20 2019] GET / => generated 5533 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[uwsgi-http key: instance-q8e0uqyg client_addr: 106.12.223.230 client_port: 32444] hr_write(): Broken pipe [plugins/http/http.c line 565]
+[uwsgi-http key:  client_addr: 138.99.216.217 client_port: 36328] hr_read(): Connection reset by peer [plugins/http/http.c line 917]
+[uwsgi-http key:  client_addr: 138.99.216.217 client_port: 39278] hr_read(): Connection reset by peer [plugins/http/http.c line 917]
+Not Found: /struts2-rest-showcase/orders.xhtml
+[pid: 18301|app: 0|req: 31/44] 60.223.251.150 () {36 vars in 1551 bytes} [Thu Aug 29 04:32:53 2019] GET /struts2-rest-showcase/orders.xhtml => generated 5658 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /index.action
+[pid: 18301|app: 0|req: 32/45] 60.223.251.150 () {36 vars in 1485 bytes} [Thu Aug 29 04:32:53 2019] GET /index.action => generated 5592 bytes in 7 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /index.do
+[pid: 18303|app: 0|req: 5/46] 60.223.251.150 () {36 vars in 1473 bytes} [Thu Aug 29 04:32:53 2019] GET /index.do => generated 5580 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'www.baidu.com'. You may need to add 'www.baidu.com' to ALLOWED_HOSTS.
+Bad Request: /http:/www.baidu.com/cache/global/img/gs.gif
+[pid: 18301|app: 0|req: 33/47] 80.82.70.187 () {28 vars in 420 bytes} [Thu Aug 29 05:24:57 2019] GET http://www.baidu.com/cache/global/img/gs.gif => generated 54791 bytes in 40 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+[uwsgi-http key: www.baidu.com client_addr: 80.82.70.187 client_port: 22944] hr_write(): Connection reset by peer [plugins/http/http.c line 565]
+[pid: 18301|app: 0|req: 34/48] 58.132.171.26 () {40 vars in 937 bytes} [Thu Aug 29 10:48:07 2019] GET /login/ => generated 3493 bytes in 17 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+Not Found: /static/css/materialdesignicons.min.css
+[pid: 18302|app: 0|req: 8/49] 58.132.171.26 () {38 vars in 884 bytes} [Thu Aug 29 10:48:07 2019] GET /static/css/materialdesignicons.min.css => generated 5670 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/css/style.css
+[pid: 18304|app: 0|req: 3/50] 58.132.171.26 () {38 vars in 848 bytes} [Thu Aug 29 10:48:07 2019] GET /static/css/style.css => generated 5616 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/vendor.bundle.addons.js
+Not Found: /static/css/vendor.bundle.base.css
+[pid: 18303|app: 0|req: 6/51] 58.132.171.26 () {40 vars in 929 bytes} [Thu Aug 29 10:48:07 2019] GET /static/css/vendor.bundle.base.css => generated 5655 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/off-canvas.js
+[pid: 18301|app: 0|req: 35/52] 58.132.171.26 () {40 vars in 894 bytes} [Thu Aug 29 10:48:07 2019] GET /static/js/off-canvas.js => generated 5625 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18304|app: 0|req: 4/53] 58.132.171.26 () {40 vars in 914 bytes} [Thu Aug 29 10:48:07 2019] GET /static/js/vendor.bundle.addons.js => generated 5655 bytes in 22 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/vendor.bundle.base.js
+[pid: 18303|app: 0|req: 7/54] 58.132.171.26 () {40 vars in 910 bytes} [Thu Aug 29 10:48:07 2019] GET /static/js/vendor.bundle.base.js => generated 5649 bytes in 13 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/images/logo.svg
+[pid: 18301|app: 0|req: 36/55] 58.132.171.26 () {40 vars in 928 bytes} [Thu Aug 29 10:48:08 2019] GET /static/images/logo.svg => generated 5622 bytes in 8 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/vendor.bundle.addons.js
+[pid: 18302|app: 0|req: 9/56] 58.132.171.26 () {38 vars in 859 bytes} [Thu Aug 29 10:48:08 2019] GET /static/js/vendor.bundle.addons.js => generated 5655 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/misc.js
+[pid: 18304|app: 0|req: 5/57] 58.132.171.26 () {40 vars in 882 bytes} [Thu Aug 29 10:48:08 2019] GET /static/js/misc.js => generated 5607 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/off-canvas.js
+[pid: 18303|app: 0|req: 8/58] 58.132.171.26 () {38 vars in 839 bytes} [Thu Aug 29 10:48:08 2019] GET /static/js/off-canvas.js => generated 5625 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/misc.js
+[pid: 18302|app: 0|req: 10/59] 58.132.171.26 () {38 vars in 827 bytes} [Thu Aug 29 10:48:08 2019] GET /static/js/misc.js => generated 5607 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18301|app: 0|req: 37/60] 58.132.171.26 () {40 vars in 937 bytes} [Thu Aug 29 10:48:15 2019] GET /login/ => generated 3493 bytes in 21 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+Not Found: /static/css/materialdesignicons.min.css
+[pid: 18301|app: 0|req: 38/61] 58.132.171.26 () {38 vars in 884 bytes} [Thu Aug 29 10:48:15 2019] GET /static/css/materialdesignicons.min.css => generated 5670 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/css/vendor.bundle.base.css
+[pid: 18304|app: 0|req: 6/62] 58.132.171.26 () {38 vars in 874 bytes} [Thu Aug 29 10:48:15 2019] GET /static/css/vendor.bundle.base.css => generated 5655 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/vendor.bundle.base.js
+[pid: 18303|app: 0|req: 9/63] 58.132.171.26 () {38 vars in 855 bytes} [Thu Aug 29 10:48:15 2019] GET /static/js/vendor.bundle.base.js => generated 5649 bytes in 7 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/images/logo.svg
+[pid: 18302|app: 0|req: 11/64] 58.132.171.26 () {38 vars in 873 bytes} [Thu Aug 29 10:48:15 2019] GET /static/images/logo.svg => generated 5622 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/css/style.css
+[pid: 18304|app: 0|req: 7/65] 58.132.171.26 () {38 vars in 848 bytes} [Thu Aug 29 10:48:15 2019] GET /static/css/style.css => generated 5616 bytes in 24 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/vendor.bundle.addons.js
+[pid: 18303|app: 0|req: 10/66] 58.132.171.26 () {38 vars in 859 bytes} [Thu Aug 29 10:48:15 2019] GET /static/js/vendor.bundle.addons.js => generated 5655 bytes in 13 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/off-canvas.js
+[pid: 18301|app: 0|req: 39/67] 58.132.171.26 () {38 vars in 839 bytes} [Thu Aug 29 10:48:15 2019] GET /static/js/off-canvas.js => generated 5625 bytes in 12 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/vendor.bundle.addons.js
+[pid: 18302|app: 0|req: 12/68] 58.132.171.26 () {38 vars in 859 bytes} [Thu Aug 29 10:48:15 2019] GET /static/js/vendor.bundle.addons.js => generated 5655 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/misc.js
+[pid: 18303|app: 0|req: 11/69] 58.132.171.26 () {38 vars in 827 bytes} [Thu Aug 29 10:48:15 2019] GET /static/js/misc.js => generated 5607 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/off-canvas.js
+[pid: 18301|app: 0|req: 40/70] 58.132.171.26 () {38 vars in 839 bytes} [Thu Aug 29 10:48:15 2019] GET /static/js/off-canvas.js => generated 5625 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/misc.js
+[pid: 18304|app: 0|req: 8/71] 58.132.171.26 () {38 vars in 827 bytes} [Thu Aug 29 10:48:16 2019] GET /static/js/misc.js => generated 5607 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18301|app: 0|req: 41/72] 58.132.171.26 () {38 vars in 906 bytes} [Thu Aug 29 10:48:23 2019] GET /login/ => generated 3493 bytes in 19 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+Not Found: /static/css/materialdesignicons.min.css
+[pid: 18302|app: 0|req: 13/73] 58.132.171.26 () {38 vars in 884 bytes} [Thu Aug 29 10:48:23 2019] GET /static/css/materialdesignicons.min.css => generated 5670 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/css/vendor.bundle.base.css
+[pid: 18301|app: 0|req: 42/74] 58.132.171.26 () {38 vars in 874 bytes} [Thu Aug 29 10:48:23 2019] GET /static/css/vendor.bundle.base.css => generated 5655 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/vendor.bundle.base.js
+[pid: 18303|app: 0|req: 12/75] 58.132.171.26 () {38 vars in 855 bytes} [Thu Aug 29 10:48:23 2019] GET /static/js/vendor.bundle.base.js => generated 5649 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/images/logo.svg
+[pid: 18303|app: 0|req: 13/76] 58.132.171.26 () {38 vars in 873 bytes} [Thu Aug 29 10:48:23 2019] GET /static/images/logo.svg => generated 5622 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/css/style.css
+[pid: 18301|app: 0|req: 43/77] 58.132.171.26 () {38 vars in 848 bytes} [Thu Aug 29 10:48:23 2019] GET /static/css/style.css => generated 5616 bytes in 16 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/vendor.bundle.addons.js
+[pid: 18303|app: 0|req: 14/78] 58.132.171.26 () {38 vars in 859 bytes} [Thu Aug 29 10:48:23 2019] GET /static/js/vendor.bundle.addons.js => generated 5655 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/off-canvas.js
+[pid: 18302|app: 0|req: 14/79] 58.132.171.26 () {38 vars in 839 bytes} [Thu Aug 29 10:48:23 2019] GET /static/js/off-canvas.js => generated 5625 bytes in 7 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/misc.js
+[pid: 18301|app: 0|req: 44/80] 58.132.171.26 () {38 vars in 827 bytes} [Thu Aug 29 10:48:23 2019] GET /static/js/misc.js => generated 5607 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18301|app: 0|req: 45/81] 58.132.171.26 () {40 vars in 937 bytes} [Thu Aug 29 10:51:13 2019] GET /login/ => generated 3493 bytes in 14 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+Not Found: /static/css/materialdesignicons.min.css
+[pid: 18302|app: 0|req: 15/82] 58.132.171.26 () {38 vars in 884 bytes} [Thu Aug 29 10:51:13 2019] GET /static/css/materialdesignicons.min.css => generated 5670 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/css/style.css
+[pid: 18301|app: 0|req: 46/83] 58.132.171.26 () {38 vars in 848 bytes} [Thu Aug 29 10:51:13 2019] GET /static/css/style.css => generated 5616 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/vendor.bundle.base.js
+[pid: 18303|app: 0|req: 15/84] 58.132.171.26 () {38 vars in 855 bytes} [Thu Aug 29 10:51:13 2019] GET /static/js/vendor.bundle.base.js => generated 5649 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/vendor.bundle.addons.js
+[pid: 18303|app: 0|req: 16/85] 58.132.171.26 () {38 vars in 859 bytes} [Thu Aug 29 10:51:13 2019] GET /static/js/vendor.bundle.addons.js => generated 5655 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/css/vendor.bundle.base.css
+[pid: 18301|app: 0|req: 47/86] 58.132.171.26 () {38 vars in 874 bytes} [Thu Aug 29 10:51:13 2019] GET /static/css/vendor.bundle.base.css => generated 5655 bytes in 17 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/images/logo.svg
+[pid: 18303|app: 0|req: 17/87] 58.132.171.26 () {38 vars in 873 bytes} [Thu Aug 29 10:51:13 2019] GET /static/images/logo.svg => generated 5622 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/off-canvas.js
+[pid: 18302|app: 0|req: 16/88] 58.132.171.26 () {38 vars in 839 bytes} [Thu Aug 29 10:51:13 2019] GET /static/js/off-canvas.js => generated 5625 bytes in 8 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/misc.js
+[pid: 18301|app: 0|req: 48/89] 58.132.171.26 () {38 vars in 827 bytes} [Thu Aug 29 10:51:13 2019] GET /static/js/misc.js => generated 5607 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18301|app: 0|req: 49/90] 58.132.171.26 () {40 vars in 937 bytes} [Thu Aug 29 10:51:19 2019] GET /login/ => generated 3493 bytes in 15 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+Not Found: /static/css/materialdesignicons.min.css
+[pid: 18301|app: 0|req: 50/91] 58.132.171.26 () {38 vars in 884 bytes} [Thu Aug 29 10:51:19 2019] GET /static/css/materialdesignicons.min.css => generated 5670 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/css/vendor.bundle.base.css
+[pid: 18301|app: 0|req: 51/92] 58.132.171.26 () {38 vars in 874 bytes} [Thu Aug 29 10:51:19 2019] GET /static/css/vendor.bundle.base.css => generated 5655 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/css/style.css
+Not Found: /static/js/vendor.bundle.base.js
+[pid: 18302|app: 0|req: 17/93] 58.132.171.26 () {38 vars in 855 bytes} [Thu Aug 29 10:51:19 2019] GET /static/js/vendor.bundle.base.js => generated 5649 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/vendor.bundle.addons.js
+[pid: 18303|app: 0|req: 18/94] 58.132.171.26 () {38 vars in 859 bytes} [Thu Aug 29 10:51:19 2019] GET /static/js/vendor.bundle.addons.js => generated 5655 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18301|app: 0|req: 52/95] 58.132.171.26 () {38 vars in 848 bytes} [Thu Aug 29 10:51:19 2019] GET /static/css/style.css => generated 5616 bytes in 21 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/images/logo.svg
+[pid: 18302|app: 0|req: 18/96] 58.132.171.26 () {38 vars in 873 bytes} [Thu Aug 29 10:51:19 2019] GET /static/images/logo.svg => generated 5622 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/off-canvas.js
+[pid: 18303|app: 0|req: 19/97] 58.132.171.26 () {38 vars in 839 bytes} [Thu Aug 29 10:51:19 2019] GET /static/js/off-canvas.js => generated 5625 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/misc.js
+[pid: 18304|app: 0|req: 9/98] 58.132.171.26 () {38 vars in 827 bytes} [Thu Aug 29 10:51:19 2019] GET /static/js/misc.js => generated 5607 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18301|app: 0|req: 53/99] 58.132.171.26 () {40 vars in 937 bytes} [Thu Aug 29 10:51:20 2019] GET /login/ => generated 3493 bytes in 14 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+Not Found: /static/css/materialdesignicons.min.css
+[pid: 18302|app: 0|req: 19/100] 58.132.171.26 () {38 vars in 884 bytes} [Thu Aug 29 10:51:20 2019] GET /static/css/materialdesignicons.min.css => generated 5670 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/css/vendor.bundle.base.css
+[pid: 18304|app: 0|req: 10/101] 58.132.171.26 () {38 vars in 874 bytes} [Thu Aug 29 10:51:20 2019] GET /static/css/vendor.bundle.base.css => generated 5655 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/css/style.css
+[pid: 18303|app: 0|req: 20/102] 58.132.171.26 () {38 vars in 848 bytes} [Thu Aug 29 10:51:20 2019] GET /static/css/style.css => generated 5616 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/vendor.bundle.addons.js
+[pid: 18301|app: 0|req: 54/103] 58.132.171.26 () {38 vars in 859 bytes} [Thu Aug 29 10:51:20 2019] GET /static/js/vendor.bundle.addons.js => generated 5655 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/vendor.bundle.base.js
+[pid: 18303|app: 0|req: 21/104] 58.132.171.26 () {38 vars in 855 bytes} [Thu Aug 29 10:51:20 2019] GET /static/js/vendor.bundle.base.js => generated 5649 bytes in 17 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/images/logo.svg
+[pid: 18301|app: 0|req: 55/105] 58.132.171.26 () {38 vars in 873 bytes} [Thu Aug 29 10:51:20 2019] GET /static/images/logo.svg => generated 5622 bytes in 7 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/off-canvas.js
+[pid: 18302|app: 0|req: 20/106] 58.132.171.26 () {38 vars in 839 bytes} [Thu Aug 29 10:51:20 2019] GET /static/js/off-canvas.js => generated 5625 bytes in 8 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/vendor.bundle.addons.js
+[pid: 18301|app: 0|req: 56/107] 58.132.171.26 () {38 vars in 859 bytes} [Thu Aug 29 10:51:20 2019] GET /static/js/vendor.bundle.addons.js => generated 5655 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/misc.js
+[pid: 18303|app: 0|req: 22/108] 58.132.171.26 () {38 vars in 827 bytes} [Thu Aug 29 10:51:20 2019] GET /static/js/misc.js => generated 5607 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/off-canvas.js
+[pid: 18302|app: 0|req: 21/109] 58.132.171.26 () {38 vars in 839 bytes} [Thu Aug 29 10:51:20 2019] GET /static/js/off-canvas.js => generated 5625 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/misc.js
+[pid: 18301|app: 0|req: 57/110] 58.132.171.26 () {38 vars in 827 bytes} [Thu Aug 29 10:51:20 2019] GET /static/js/misc.js => generated 5607 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18301|app: 0|req: 58/111] 58.132.171.26 () {40 vars in 937 bytes} [Thu Aug 29 10:51:22 2019] GET /login/ => generated 3493 bytes in 17 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+Not Found: /static/css/materialdesignicons.min.css
+[pid: 18301|app: 0|req: 59/112] 58.132.171.26 () {38 vars in 884 bytes} [Thu Aug 29 10:51:22 2019] GET /static/css/materialdesignicons.min.css => generated 5670 bytes in 7 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/css/vendor.bundle.base.css
+[pid: 18303|app: 0|req: 23/113] 58.132.171.26 () {38 vars in 874 bytes} [Thu Aug 29 10:51:22 2019] GET /static/css/vendor.bundle.base.css => generated 5655 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/css/style.css
+[pid: 18302|app: 0|req: 22/114] 58.132.171.26 () {38 vars in 848 bytes} [Thu Aug 29 10:51:22 2019] GET /static/css/style.css => generated 5616 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/vendor.bundle.addons.js
+[pid: 18304|app: 0|req: 11/115] 58.132.171.26 () {38 vars in 859 bytes} [Thu Aug 29 10:51:22 2019] GET /static/js/vendor.bundle.addons.js => generated 5655 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/images/logo.svg
+[pid: 18303|app: 0|req: 24/116] 58.132.171.26 () {38 vars in 873 bytes} [Thu Aug 29 10:51:22 2019] GET /static/images/logo.svg => generated 5622 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/vendor.bundle.base.js
+[pid: 18302|app: 0|req: 23/117] 58.132.171.26 () {38 vars in 855 bytes} [Thu Aug 29 10:51:22 2019] GET /static/js/vendor.bundle.base.js => generated 5649 bytes in 16 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/off-canvas.js
+[pid: 18301|app: 0|req: 60/118] 58.132.171.26 () {38 vars in 839 bytes} [Thu Aug 29 10:51:22 2019] GET /static/js/off-canvas.js => generated 5625 bytes in 7 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/misc.js
+[pid: 18301|app: 0|req: 61/119] 58.132.171.26 () {38 vars in 827 bytes} [Thu Aug 29 10:51:22 2019] GET /static/js/misc.js => generated 5607 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/vendor.bundle.addons.js
+[pid: 18302|app: 0|req: 24/120] 58.132.171.26 () {38 vars in 859 bytes} [Thu Aug 29 10:51:22 2019] GET /static/js/vendor.bundle.addons.js => generated 5655 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/off-canvas.js
+[pid: 18301|app: 0|req: 62/121] 58.132.171.26 () {38 vars in 838 bytes} [Thu Aug 29 10:51:23 2019] GET /static/js/off-canvas.js => generated 5625 bytes in 8 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/misc.js
+[pid: 18302|app: 0|req: 25/122] 58.132.171.26 () {38 vars in 826 bytes} [Thu Aug 29 10:51:23 2019] GET /static/js/misc.js => generated 5607 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'instance-q8e0uqyg:8000'. You may need to add 'instance-q8e0uqyg' to ALLOWED_HOSTS.
+Bad Request: /
+[pid: 18301|app: 0|req: 63/123] 210.52.224.155 () {22 vars in 229 bytes} [Thu Aug 29 15:19:05 2019] GET / => generated 53958 bytes in 32 msecs (HTTP/1.0 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'instance-q8e0uqyg:8000'. You may need to add 'instance-q8e0uqyg' to ALLOWED_HOSTS.
+Bad Request: /nice ports,/Trinity.txt.bak
+[pid: 18301|app: 0|req: 64/124] 210.52.224.155 () {22 vars in 290 bytes} [Thu Aug 29 15:19:10 2019] GET /nice%20ports%2C/Tri%6Eity.txt%2ebak => generated 54301 bytes in 32 msecs (HTTP/1.0 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'instance-q8e0uqyg:8000'. You may need to add 'instance-q8e0uqyg' to ALLOWED_HOSTS.
+Bad Request: /
+[pid: 18301|app: 0|req: 65/125] 210.52.224.155 () {22 vars in 228 bytes} [Thu Aug 29 15:19:16 2019] GET / => generated 53957 bytes in 41 msecs (HTTP/1.0 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'instance-q8e0uqyg:8000'. You may need to add 'instance-q8e0uqyg' to ALLOWED_HOSTS.
+Bad Request: /
+[pid: 18302|app: 0|req: 26/126] 210.52.224.155 () {22 vars in 228 bytes} [Thu Aug 29 15:19:16 2019] GET / => generated 53957 bytes in 41 msecs (HTTP/1.0 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'instance-q8e0uqyg:8000'. You may need to add 'instance-q8e0uqyg' to ALLOWED_HOSTS.
+Bad Request: /
+[pid: 18301|app: 0|req: 66/127] 210.52.224.155 () {22 vars in 232 bytes} [Thu Aug 29 15:19:16 2019] OPTIONS / => generated 53985 bytes in 61 msecs (HTTP/1.0 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'instance-q8e0uqyg:8000'. You may need to add 'instance-q8e0uqyg' to ALLOWED_HOSTS.
+Bad Request: /
+[pid: 18302|app: 0|req: 27/128] 210.52.224.155 () {22 vars in 233 bytes} [Thu Aug 29 15:19:16 2019] OPTIONS / => generated 53986 bytes in 31 msecs (RTSP/1.0 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'instance-q8e0uqyg:8000'. You may need to add 'instance-q8e0uqyg' to ALLOWED_HOSTS.
+Bad Request: /sip:nm
+[pid: 18301|app: 0|req: 67/129] 210.52.224.155 () {40 vars in 479 bytes} [Thu Aug 29 15:19:16 2019] OPTIONS sip:nm => generated 55242 bytes in 48 msecs (SIP/2.0 400) 1 headers in 52 bytes (1 switches on core 0)
+Not Found: /
+[pid: 18301|app: 0|req: 68/130] 210.52.224.155 () {24 vars in 256 bytes} [Thu Aug 29 15:19:20 2019] GET / => generated 5533 bytes in 7 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /sdk
+[pid: 18302|app: 0|req: 28/131] 210.52.224.155 () {30 vars in 411 bytes} [Thu Aug 29 15:19:20 2019] POST /sdk => generated 5566 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /nmaplowercheck1567091960
+[pid: 18301|app: 0|req: 69/132] 210.52.224.155 () {28 vars in 431 bytes} [Thu Aug 29 15:19:20 2019] GET /nmaplowercheck1567091960 => generated 5628 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /HNAP1
+[pid: 18301|app: 0|req: 70/133] 210.52.224.155 () {28 vars in 393 bytes} [Thu Aug 29 15:19:20 2019] GET /HNAP1 => generated 5571 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /evox/about
+[pid: 18303|app: 0|req: 25/134] 210.52.224.155 () {28 vars in 403 bytes} [Thu Aug 29 15:19:20 2019] GET /evox/about => generated 5586 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'www'. You may need to add 'www' to ALLOWED_HOSTS.
+Bad Request: /
+[pid: 18301|app: 0|req: 71/135] 210.52.224.155 () {28 vars in 354 bytes} [Thu Aug 29 15:19:25 2019] GET / => generated 54139 bytes in 35 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'www.baidu.com'. You may need to add 'www.baidu.com' to ALLOWED_HOSTS.
+Bad Request: /http:/www.baidu.com/cache/global/img/gs.gif
+[pid: 18301|app: 0|req: 72/136] 80.82.70.187 () {28 vars in 420 bytes} [Thu Aug 29 15:27:01 2019] GET http://www.baidu.com/cache/global/img/gs.gif => generated 54791 bytes in 33 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'www.qq.com'. You may need to add 'www.qq.com' to ALLOWED_HOSTS.
+Bad Request: /http:/www.qq.com/404/search_children.js
+[pid: 18301|app: 0|req: 73/137] 120.132.3.65 () {30 vars in 493 bytes} [Thu Aug 29 17:36:02 2019] GET http://www.qq.com/404/search_children.js => generated 54898 bytes in 58 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+[uwsgi-http key: www.qq.com client_addr: 120.132.3.65 client_port: 65121] hr_write(): Connection reset by peer [plugins/http/http.c line 565]
+Invalid HTTP_HOST header: 'www.baidu.com'. You may need to add 'www.baidu.com' to ALLOWED_HOSTS.
+Bad Request: /http:/www.baidu.com/cache/global/img/gs.gif
+[pid: 18301|app: 0|req: 74/138] 80.82.70.187 () {28 vars in 418 bytes} [Fri Aug 30 01:32:30 2019] GET http://www.baidu.com/cache/global/img/gs.gif => generated 54789 bytes in 46 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+[uwsgi-http key: www.baidu.com client_addr: 80.82.70.187 client_port: 183] hr_write(): Connection reset by peer [plugins/http/http.c line 565]
+[pid: 18301|app: 0|req: 75/139] 47.98.217.72 () {40 vars in 936 bytes} [Fri Aug 30 02:35:11 2019] GET /login/ => generated 3493 bytes in 16 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+Not Found: /static/css/materialdesignicons.min.css
+[pid: 18301|app: 0|req: 76/140] 47.98.217.72 () {38 vars in 883 bytes} [Fri Aug 30 02:35:11 2019] GET /static/css/materialdesignicons.min.css => generated 5670 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/css/style.css
+[pid: 18303|app: 0|req: 26/141] 47.98.217.72 () {38 vars in 847 bytes} [Fri Aug 30 02:35:11 2019] GET /static/css/style.css => generated 5616 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/css/vendor.bundle.base.css
+[pid: 18303|app: 0|req: 27/142] 47.98.217.72 () {38 vars in 873 bytes} [Fri Aug 30 02:35:11 2019] GET /static/css/vendor.bundle.base.css => generated 5655 bytes in 20 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/vendor.bundle.addons.js
+[pid: 18302|app: 0|req: 29/143] 47.98.217.72 () {38 vars in 858 bytes} [Fri Aug 30 02:35:11 2019] GET /static/js/vendor.bundle.addons.js => generated 5655 bytes in 16 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/vendor.bundle.base.js
+[pid: 18304|app: 0|req: 12/144] 47.98.217.72 () {38 vars in 854 bytes} [Fri Aug 30 02:35:11 2019] GET /static/js/vendor.bundle.base.js => generated 5649 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/images/logo.svg
+[pid: 18301|app: 0|req: 77/145] 47.98.217.72 () {38 vars in 872 bytes} [Fri Aug 30 02:35:11 2019] GET /static/images/logo.svg => generated 5622 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/off-canvas.js
+[pid: 18302|app: 0|req: 30/146] 47.98.217.72 () {38 vars in 838 bytes} [Fri Aug 30 02:35:11 2019] GET /static/js/off-canvas.js => generated 5625 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/vendor.bundle.addons.js
+[pid: 18304|app: 0|req: 13/147] 47.98.217.72 () {38 vars in 858 bytes} [Fri Aug 30 02:35:11 2019] GET /static/js/vendor.bundle.addons.js => generated 5655 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/misc.js
+[pid: 18301|app: 0|req: 78/148] 47.98.217.72 () {38 vars in 826 bytes} [Fri Aug 30 02:35:11 2019] GET /static/js/misc.js => generated 5607 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/off-canvas.js
+[pid: 18303|app: 0|req: 28/149] 47.98.217.72 () {38 vars in 838 bytes} [Fri Aug 30 02:35:11 2019] GET /static/js/off-canvas.js => generated 5625 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/misc.js
+[pid: 18302|app: 0|req: 31/150] 47.98.217.72 () {38 vars in 826 bytes} [Fri Aug 30 02:35:11 2019] GET /static/js/misc.js => generated 5607 bytes in 7 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'httpbin.org'. You may need to add 'httpbin.org' to ALLOWED_HOSTS.
+Bad Request: /http:/httpbin.org/headers
+[pid: 18301|app: 0|req: 79/151] 221.217.174.231 () {36 vars in 535 bytes} [Fri Aug 30 02:45:22 2019] GET http://httpbin.org/headers => generated 55112 bytes in 35 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'instance-q8e0uqyg:8000'. You may need to add 'instance-q8e0uqyg' to ALLOWED_HOSTS.
+Bad Request: /httpbin.org:443
+[pid: 18301|app: 0|req: 80/152] 221.217.174.231 () {22 vars in 262 bytes} [Fri Aug 30 02:45:37 2019] CONNECT httpbin.org:443 => generated 54161 bytes in 56 msecs (HTTP/1.0 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'instance-q8e0uqyg:8000'. You may need to add 'instance-q8e0uqyg' to ALLOWED_HOSTS.
+Bad Request: /mnt/custom/ProductDefinition
+[pid: 18301|app: 0|req: 81/153] 177.17.245.16 () {22 vars in 285 bytes} [Fri Aug 30 04:38:26 2019] GET ../../mnt/custom/ProductDefinition => generated 54294 bytes in 34 msecs (HTTP 400) 1 headers in 49 bytes (1 switches on core 0)
+Not Found: /static/css/materialdesignicons.min.css
+[pid: 18301|app: 0|req: 82/154] 47.98.217.72 () {38 vars in 883 bytes} [Fri Aug 30 11:01:23 2019] GET /static/css/materialdesignicons.min.css => generated 5670 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/css/vendor.bundle.base.css
+[pid: 18301|app: 0|req: 83/155] 47.98.217.72 () {38 vars in 873 bytes} [Fri Aug 30 11:01:23 2019] GET /static/css/vendor.bundle.base.css => generated 5655 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/css/style.css
+[pid: 18302|app: 0|req: 32/156] 47.98.217.72 () {38 vars in 847 bytes} [Fri Aug 30 11:01:23 2019] GET /static/css/style.css => generated 5616 bytes in 7 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/vendor.bundle.base.js
+[pid: 18301|app: 0|req: 84/157] 47.98.217.72 () {38 vars in 852 bytes} [Fri Aug 30 11:01:23 2019] GET /static/js/vendor.bundle.base.js => generated 5649 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/vendor.bundle.addons.js
+[pid: 18304|app: 0|req: 14/158] 47.98.217.72 () {38 vars in 857 bytes} [Fri Aug 30 11:01:23 2019] GET /static/js/vendor.bundle.addons.js => generated 5655 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/off-canvas.js
+[pid: 18303|app: 0|req: 29/159] 47.98.217.72 () {38 vars in 837 bytes} [Fri Aug 30 11:01:23 2019] GET /static/js/off-canvas.js => generated 5625 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/misc.js
+[pid: 18301|app: 0|req: 85/160] 47.98.217.72 () {38 vars in 825 bytes} [Fri Aug 30 11:01:23 2019] GET /static/js/misc.js => generated 5607 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/images/logo.svg
+[pid: 18302|app: 0|req: 33/161] 47.98.217.72 () {38 vars in 871 bytes} [Fri Aug 30 11:01:24 2019] GET /static/images/logo.svg => generated 5622 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/images/favicon.png
+[pid: 18301|app: 0|req: 86/162] 47.98.217.72 () {38 vars in 877 bytes} [Fri Aug 30 11:01:24 2019] GET /static/images/favicon.png => generated 5631 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'www.baidu.com'. You may need to add 'www.baidu.com' to ALLOWED_HOSTS.
+Bad Request: /http:/www.baidu.com/cache/global/img/gs.gif
+[pid: 18301|app: 0|req: 87/163] 80.82.70.187 () {28 vars in 419 bytes} [Fri Aug 30 11:36:18 2019] GET http://www.baidu.com/cache/global/img/gs.gif => generated 54790 bytes in 35 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+[uwsgi-http key: www.baidu.com client_addr: 80.82.70.187 client_port: 1258] hr_read(): Connection reset by peer [plugins/http/http.c line 917]
+Invalid HTTP_HOST header: 'instance-q8e0uqyg:8000'. You may need to add 'instance-q8e0uqyg' to ALLOWED_HOSTS.
+Bad Request: /mnt/custom/ProductDefinition
+[pid: 18301|app: 0|req: 88/164] 45.70.141.203 () {22 vars in 285 bytes} [Fri Aug 30 13:25:17 2019] GET ../../mnt/custom/ProductDefinition => generated 54294 bytes in 34 msecs (HTTP 400) 1 headers in 49 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'instance-q8e0uqyg:8000'. You may need to add 'instance-q8e0uqyg' to ALLOWED_HOSTS.
+Bad Request: /mnt/custom/ProductDefinition
+[pid: 18301|app: 0|req: 89/165] 73.155.46.8 () {22 vars in 283 bytes} [Fri Aug 30 21:04:07 2019] GET ../../mnt/custom/ProductDefinition => generated 54292 bytes in 51 msecs (HTTP 400) 1 headers in 49 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'www.baidu.com'. You may need to add 'www.baidu.com' to ALLOWED_HOSTS.
+Bad Request: /http:/www.baidu.com/cache/global/img/gs.gif
+[pid: 18301|app: 0|req: 90/166] 80.82.70.187 () {28 vars in 420 bytes} [Fri Aug 30 21:34:37 2019] GET http://www.baidu.com/cache/global/img/gs.gif => generated 54791 bytes in 41 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+[uwsgi-http key: www.baidu.com client_addr: 80.82.70.187 client_port: 25517] hr_write(): Connection reset by peer [plugins/http/http.c line 565]
+Invalid HTTP_HOST header: 'instance-q8e0uqyg:8000'. You may need to add 'instance-q8e0uqyg' to ALLOWED_HOSTS.
+Bad Request: /mnt/custom/ProductDefinition
+[pid: 18301|app: 0|req: 91/167] 81.25.49.113 () {22 vars in 284 bytes} [Sat Aug 31 05:57:31 2019] GET ../../mnt/custom/ProductDefinition => generated 54293 bytes in 74 msecs (HTTP 400) 1 headers in 49 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'www.baidu.com'. You may need to add 'www.baidu.com' to ALLOWED_HOSTS.
+Bad Request: /http:/www.baidu.com/cache/global/img/gs.gif
+[pid: 18301|app: 0|req: 92/168] 80.82.70.187 () {28 vars in 420 bytes} [Sat Aug 31 07:34:18 2019] GET http://www.baidu.com/cache/global/img/gs.gif => generated 54791 bytes in 44 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+[uwsgi-http key: www.baidu.com client_addr: 80.82.70.187 client_port: 48586] hr_write(): Connection reset by peer [plugins/http/http.c line 565]
+Invalid HTTP_HOST header: 'www.baidu.com'. You may need to add 'www.baidu.com' to ALLOWED_HOSTS.
+Bad Request: /http:/www.baidu.com/cache/global/img/gs.gif
+[pid: 18301|app: 0|req: 93/169] 185.216.140.186 () {28 vars in 423 bytes} [Sat Aug 31 12:11:08 2019] GET http://www.baidu.com/cache/global/img/gs.gif => generated 54794 bytes in 50 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+[uwsgi-http key: www.baidu.com client_addr: 185.216.140.186 client_port: 35053] hr_write(): Connection reset by peer [plugins/http/http.c line 565]
+Invalid HTTP_HOST header: 'instance-q8e0uqyg:8000'. You may need to add 'instance-q8e0uqyg' to ALLOWED_HOSTS.
+Bad Request: /mnt/custom/ProductDefinition
+[pid: 18301|app: 0|req: 94/170] 179.253.154.80 () {22 vars in 285 bytes} [Sat Aug 31 14:09:06 2019] GET ../../mnt/custom/ProductDefinition => generated 54294 bytes in 33 msecs (HTTP 400) 1 headers in 49 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'www.baidu.com'. You may need to add 'www.baidu.com' to ALLOWED_HOSTS.
+Bad Request: /http:/www.baidu.com/cache/global/img/gs.gif
+[pid: 18301|app: 0|req: 95/171] 80.82.70.187 () {28 vars in 420 bytes} [Sat Aug 31 17:31:53 2019] GET http://www.baidu.com/cache/global/img/gs.gif => generated 54791 bytes in 37 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+[uwsgi-http key: www.baidu.com client_addr: 80.82.70.187 client_port: 34284] hr_write(): Connection reset by peer [plugins/http/http.c line 565]
+Invalid HTTP_HOST header: 'instance-q8e0uqyg:8000'. You may need to add 'instance-q8e0uqyg' to ALLOWED_HOSTS.
+Bad Request: /mnt/custom/ProductDefinition
+[pid: 18301|app: 0|req: 96/172] 189.167.234.234 () {22 vars in 286 bytes} [Sat Aug 31 18:11:26 2019] GET ../../mnt/custom/ProductDefinition => generated 54295 bytes in 60 msecs (HTTP 400) 1 headers in 49 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'instance-q8e0uqyg:8000'. You may need to add 'instance-q8e0uqyg' to ALLOWED_HOSTS.
+Bad Request: /
+[pid: 18301|app: 0|req: 97/173] 106.12.223.227 () {22 vars in 229 bytes} [Sat Aug 31 19:26:07 2019] GET / => generated 53958 bytes in 51 msecs (HTTP/1.0 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'instance-q8e0uqyg:8000'. You may need to add 'instance-q8e0uqyg' to ALLOWED_HOSTS.
+Bad Request: /nice ports,/Trinity.txt.bak
+[pid: 18301|app: 0|req: 98/174] 106.12.223.226 () {22 vars in 291 bytes} [Sat Aug 31 19:26:12 2019] GET /nice%20ports%2C/Tri%6Eity.txt%2ebak => generated 54302 bytes in 38 msecs (HTTP/1.0 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'instance-q8e0uqyg:8000'. You may need to add 'instance-q8e0uqyg' to ALLOWED_HOSTS.
+Bad Request: /
+[pid: 18301|app: 0|req: 99/175] 106.12.223.226 () {22 vars in 233 bytes} [Sat Aug 31 19:26:17 2019] OPTIONS / => generated 53986 bytes in 35 msecs (HTTP/1.0 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'instance-q8e0uqyg:8000'. You may need to add 'instance-q8e0uqyg' to ALLOWED_HOSTS.
+Bad Request: /
+[pid: 18301|app: 0|req: 100/176] 106.12.223.226 () {22 vars in 232 bytes} [Sat Aug 31 19:26:18 2019] OPTIONS / => generated 53985 bytes in 34 msecs (RTSP/1.0 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'instance-q8e0uqyg:8000'. You may need to add 'instance-q8e0uqyg' to ALLOWED_HOSTS.
+Bad Request: /sip:nm
+[pid: 18302|app: 0|req: 34/177] 106.12.223.224 () {40 vars in 479 bytes} [Sat Aug 31 19:26:18 2019] OPTIONS sip:nm => generated 55242 bytes in 39 msecs (SIP/2.0 400) 1 headers in 52 bytes (1 switches on core 0)
+[uwsgi-http key: instance-q8e0uqyg client_addr: 106.12.223.224 client_port: 17024] hr_write(): Connection reset by peer [plugins/http/http.c line 565]
+Not Found: /
+[pid: 18301|app: 0|req: 101/178] 106.12.223.224 () {24 vars in 255 bytes} [Sat Aug 31 19:26:18 2019] GET / => generated 5533 bytes in 11 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'instance-q8e0uqyg:8000'. You may need to add 'instance-q8e0uqyg' to ALLOWED_HOSTS.
+Bad Request: /mnt/custom/ProductDefinition
+[pid: 18301|app: 0|req: 102/179] 87.247.136.47 () {22 vars in 285 bytes} [Sun Sep  1 02:00:45 2019] GET ../../mnt/custom/ProductDefinition => generated 54293 bytes in 48 msecs (HTTP 400) 1 headers in 49 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'instance-q8e0uqyg:8000'. You may need to add 'instance-q8e0uqyg' to ALLOWED_HOSTS.
+Bad Request: /mnt/custom/ProductDefinition
+[pid: 18301|app: 0|req: 103/180] 187.188.26.240 () {22 vars in 286 bytes} [Sun Sep  1 02:36:58 2019] GET ../../mnt/custom/ProductDefinition => generated 54294 bytes in 48 msecs (HTTP 400) 1 headers in 49 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'instance-q8e0uqyg:8000'. You may need to add 'instance-q8e0uqyg' to ALLOWED_HOSTS.
+Bad Request: /mnt/custom/ProductDefinition
+[pid: 18301|app: 0|req: 104/181] 140.148.228.55 () {22 vars in 286 bytes} [Sun Sep  1 03:12:25 2019] GET ../../mnt/custom/ProductDefinition => generated 54294 bytes in 37 msecs (HTTP 400) 1 headers in 49 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'www.baidu.com'. You may need to add 'www.baidu.com' to ALLOWED_HOSTS.
+Bad Request: /http:/www.baidu.com/cache/global/img/gs.gif
+[pid: 18301|app: 0|req: 105/182] 80.82.70.187 () {28 vars in 420 bytes} [Sun Sep  1 03:36:27 2019] GET http://www.baidu.com/cache/global/img/gs.gif => generated 54790 bytes in 42 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'instance-q8e0uqyg:8000'. You may need to add 'instance-q8e0uqyg' to ALLOWED_HOSTS.
+Bad Request: /mnt/custom/ProductDefinition
+[pid: 18301|app: 0|req: 106/183] 96.9.150.80 () {22 vars in 283 bytes} [Sun Sep  1 07:00:13 2019] GET ../../mnt/custom/ProductDefinition => generated 54291 bytes in 42 msecs (HTTP 400) 1 headers in 49 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'instance-q8e0uqyg:8000'. You may need to add 'instance-q8e0uqyg' to ALLOWED_HOSTS.
+Bad Request: /mnt/custom/ProductDefinition
+[pid: 18301|app: 0|req: 107/184] 96.9.150.80 () {22 vars in 283 bytes} [Sun Sep  1 07:00:14 2019] GET ../../mnt/custom/ProductDefinition => generated 54291 bytes in 40 msecs (HTTP 400) 1 headers in 49 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'instance-q8e0uqyg:8000'. You may need to add 'instance-q8e0uqyg' to ALLOWED_HOSTS.
+Bad Request: /mnt/custom/ProductDefinition
+[pid: 18301|app: 0|req: 108/185] 96.9.150.80 () {22 vars in 283 bytes} [Sun Sep  1 07:00:18 2019] GET ../../mnt/custom/ProductDefinition => generated 54291 bytes in 93 msecs (HTTP 400) 1 headers in 49 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'instance-q8e0uqyg:8000'. You may need to add 'instance-q8e0uqyg' to ALLOWED_HOSTS.
+Bad Request: /mnt/custom/ProductDefinition
+[pid: 18301|app: 0|req: 109/186] 96.9.150.80 () {22 vars in 283 bytes} [Sun Sep  1 07:00:33 2019] GET ../../mnt/custom/ProductDefinition => generated 54291 bytes in 37 msecs (HTTP 400) 1 headers in 49 bytes (1 switches on core 0)
+Not Found: /
+[pid: 18301|app: 0|req: 110/187] 71.6.146.185 () {30 vars in 483 bytes} [Sun Sep  1 09:52:56 2019] GET / => generated 5533 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 18301|app: 0|req: 111/188] 71.6.146.185 () {32 vars in 406 bytes} [Sun Sep  1 09:52:57 2019] GET /favicon.ico => generated 5589 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'instance-q8e0uqyg:8000'. You may need to add 'instance-q8e0uqyg' to ALLOWED_HOSTS.
+Bad Request: /mnt/custom/ProductDefinition
+[pid: 18301|app: 0|req: 112/189] 123.21.76.94 () {22 vars in 284 bytes} [Sun Sep  1 11:07:57 2019] GET ../../mnt/custom/ProductDefinition => generated 54292 bytes in 36 msecs (HTTP 400) 1 headers in 49 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'instance-q8e0uqyg:8000'. You may need to add 'instance-q8e0uqyg' to ALLOWED_HOSTS.
+Bad Request: /mnt/custom/ProductDefinition
+[pid: 18301|app: 0|req: 113/190] 27.66.217.64 () {22 vars in 284 bytes} [Sun Sep  1 15:22:14 2019] GET ../../mnt/custom/ProductDefinition => generated 54292 bytes in 36 msecs (HTTP 400) 1 headers in 49 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'instance-q8e0uqyg:8000'. You may need to add 'instance-q8e0uqyg' to ALLOWED_HOSTS.
+Bad Request: /http:/110.249.212.46/testget
+[pid: 18301|app: 0|req: 114/191] 110.249.212.46 () {28 vars in 417 bytes} [Sun Sep  1 15:39:21 2019] GET http://110.249.212.46/testget?q=23333&port=8000 => generated 55288 bytes in 37 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+[uwsgi-http key: instance-q8e0uqyg client_addr: 110.249.212.46 client_port: 35485] hr_write(): Broken pipe [plugins/http/http.c line 565]
+Invalid HTTP_HOST header: 'instance-q8e0uqyg:8000'. You may need to add 'instance-q8e0uqyg' to ALLOWED_HOSTS.
+Bad Request: /mnt/custom/ProductDefinition
+[pid: 18301|app: 0|req: 115/192] 14.186.183.87 () {22 vars in 285 bytes} [Sun Sep  1 16:08:15 2019] GET ../../mnt/custom/ProductDefinition => generated 54293 bytes in 49 msecs (HTTP 400) 1 headers in 49 bytes (1 switches on core 0)
+[uwsgi-http key:  client_addr: 104.152.52.27 client_port: 11734] hr_read(): Connection reset by peer [plugins/http/http.c line 917]
+Invalid HTTP_HOST header: 'instance-q8e0uqyg:8000'. You may need to add 'instance-q8e0uqyg' to ALLOWED_HOSTS.
+Bad Request: /mnt/custom/ProductDefinition
+[pid: 18301|app: 0|req: 116/193] 219.85.63.139 () {22 vars in 285 bytes} [Sun Sep  1 20:39:45 2019] GET ../../mnt/custom/ProductDefinition => generated 54293 bytes in 44 msecs (HTTP 400) 1 headers in 49 bytes (1 switches on core 0)
+[uwsgi-http key:  client_addr: 198.108.67.48 client_port: 45716] hr_read(): Connection reset by peer [plugins/http/http.c line 917]
+Not Found: /
+[pid: 18301|app: 0|req: 117/194] 198.108.67.48 () {24 vars in 260 bytes} [Sun Sep  1 22:48:14 2019] GET / => generated 5538 bytes in 20 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'www.baidu.com'. You may need to add 'www.baidu.com' to ALLOWED_HOSTS.
+Bad Request: /http:/www.baidu.com/cache/global/img/gs.gif
+[pid: 18301|app: 0|req: 118/195] 80.82.70.187 () {28 vars in 420 bytes} [Sun Sep  1 23:38:23 2019] GET http://www.baidu.com/cache/global/img/gs.gif => generated 54790 bytes in 33 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+[uwsgi-http key: www.baidu.com client_addr: 80.82.70.187 client_port: 34986] hr_write(): Connection reset by peer [plugins/http/http.c line 565]
+Invalid HTTP_HOST header: 'instance-q8e0uqyg:8000'. You may need to add 'instance-q8e0uqyg' to ALLOWED_HOSTS.
+Bad Request: /mnt/custom/ProductDefinition
+[pid: 18301|app: 0|req: 119/196] 187.189.94.75 () {22 vars in 285 bytes} [Mon Sep  2 00:37:39 2019] GET ../../mnt/custom/ProductDefinition => generated 54293 bytes in 51 msecs (HTTP 400) 1 headers in 49 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'www.baidu.com'. You may need to add 'www.baidu.com' to ALLOWED_HOSTS.
+Bad Request: /http:/www.baidu.com/
+[pid: 18301|app: 0|req: 120/197] 111.224.7.119 () {32 vars in 465 bytes} [Mon Sep  2 00:53:38 2019] GET http://www.baidu.com/ => generated 54813 bytes in 48 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'www.rfa.org'. You may need to add 'www.rfa.org' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'www.epochtimes.com'. You may need to add 'www.epochtimes.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'wujieliulan.com'. You may need to add 'wujieliulan.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'www.boxun.com'. You may need to add 'www.boxun.com' to ALLOWED_HOSTS.
+Bad Request: /http:/www.rfa.org/
+[pid: 18301|app: 0|req: 121/198] 111.224.7.119 () {32 vars in 459 bytes} [Mon Sep  2 00:53:44 2019] GET http://www.rfa.org/ => generated 54757 bytes in 136 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'www.bing.com'. You may need to add 'www.bing.com' to ALLOWED_HOSTS.
+Bad Request: /http:/www.epochtimes.com/
+[pid: 18302|app: 0|req: 35/199] 111.224.7.119 () {32 vars in 480 bytes} [Mon Sep  2 00:53:44 2019] GET http://www.epochtimes.com/ => generated 54948 bytes in 123 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'www.123cha.com'. You may need to add 'www.123cha.com' to ALLOWED_HOSTS.
+Bad Request: /http:/www.boxun.com/
+[pid: 18304|app: 0|req: 15/200] 111.224.7.119 () {32 vars in 465 bytes} [Mon Sep  2 00:53:45 2019] GET http://www.boxun.com/ => generated 54813 bytes in 154 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'www.minghui.org'. You may need to add 'www.minghui.org' to ALLOWED_HOSTS.
+Bad Request: /http:/wujieliulan.com/
+[pid: 18303|app: 0|req: 30/201] 111.224.7.119 () {32 vars in 471 bytes} [Mon Sep  2 00:53:45 2019] GET http://wujieliulan.com/ => generated 54867 bytes in 177 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'instance-q8e0uqyg:8000'. You may need to add 'instance-q8e0uqyg' to ALLOWED_HOSTS.
+Bad Request: /http:/www.123cha.com/
+[pid: 18302|app: 0|req: 36/202] 111.224.7.119 () {32 vars in 468 bytes} [Mon Sep  2 00:53:45 2019] GET http://www.123cha.com/ => generated 54840 bytes in 135 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Bad Request: /http:/www.bing.com/
+[pid: 18301|app: 0|req: 122/203] 111.224.7.119 () {32 vars in 462 bytes} [Mon Sep  2 00:53:45 2019] GET http://www.bing.com/ => generated 54784 bytes in 167 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Bad Request: /http:/www.minghui.org/
+[pid: 18304|app: 0|req: 16/204] 111.224.7.119 () {32 vars in 471 bytes} [Mon Sep  2 00:53:45 2019] GET http://www.minghui.org/ => generated 54867 bytes in 114 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Bad Request: /www.voanews.com:443
+[pid: 18303|app: 0|req: 31/205] 111.224.7.119 () {22 vars in 268 bytes} [Mon Sep  2 00:53:45 2019] CONNECT www.voanews.com:443 => generated 54206 bytes in 110 msecs (HTTP/1.0 400) 1 headers in 53 bytes (1 switches on core 0)
+Not Found: /
+[pid: 18301|app: 0|req: 123/206] 139.162.79.87 () {30 vars in 341 bytes} [Mon Sep  2 01:32:18 2019] GET / => generated 5538 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'instance-q8e0uqyg:8000'. You may need to add 'instance-q8e0uqyg' to ALLOWED_HOSTS.
+Bad Request: /mnt/custom/ProductDefinition
+[pid: 18301|app: 0|req: 124/207] 171.245.22.47 () {22 vars in 285 bytes} [Mon Sep  2 03:01:03 2019] GET ../../mnt/custom/ProductDefinition => generated 54293 bytes in 35 msecs (HTTP 400) 1 headers in 49 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'www.baidu.com'. You may need to add 'www.baidu.com' to ALLOWED_HOSTS.
+Bad Request: /http:/www.baidu.com/cache/global/img/gs.gif
+[pid: 18301|app: 0|req: 125/208] 185.216.140.186 () {28 vars in 423 bytes} [Mon Sep  2 03:54:16 2019] GET http://www.baidu.com/cache/global/img/gs.gif => generated 54793 bytes in 36 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+[uwsgi-http key: www.baidu.com client_addr: 185.216.140.186 client_port: 38043] hr_write(): Connection reset by peer [plugins/http/http.c line 565]
+[uwsgi-http key:  client_addr: 49.75.193.221 client_port: 55570] hr_read(): Connection reset by peer [plugins/http/http.c line 917]
+Invalid HTTP_HOST header: 'instance-q8e0uqyg:8000'. You may need to add 'instance-q8e0uqyg' to ALLOWED_HOSTS.
+Bad Request: /mnt/custom/ProductDefinition
+[pid: 18301|app: 0|req: 126/209] 14.186.232.98 () {22 vars in 285 bytes} [Mon Sep  2 08:01:31 2019] GET ../../mnt/custom/ProductDefinition => generated 54293 bytes in 35 msecs (HTTP 400) 1 headers in 49 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Sep  2 16:55:10 2019] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-36) on 27 August 2019 03:56:03
+os: Linux-3.10.0-957.21.3.el7.x86_64 #1 SMP Tue Jun 18 16:35:19 UTC 2019
+nodename: instance-q8e0uqyg
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /abc
+writing pidfile to /abc/uwsgi_pid.log
+detected binary path: /usr/local/python3/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /abc
+your processes number limit is 7914
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+!!! no /etc/mime.types file found !!!
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (:8000).
+bind(): Address already in use [core/socket.c line 769]
+[pid: 18301|app: 0|req: 127/210] 58.135.84.149 () {40 vars in 937 bytes} [Mon Sep  2 08:55:49 2019] GET /login/ => generated 3493 bytes in 19 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+Not Found: /static/css/materialdesignicons.min.css
+[pid: 18301|app: 0|req: 128/211] 58.135.84.149 () {38 vars in 884 bytes} [Mon Sep  2 08:55:49 2019] GET /static/css/materialdesignicons.min.css => generated 5670 bytes in 7 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/css/vendor.bundle.base.css
+[pid: 18303|app: 0|req: 32/212] 58.135.84.149 () {38 vars in 874 bytes} [Mon Sep  2 08:55:49 2019] GET /static/css/vendor.bundle.base.css => generated 5655 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/vendor.bundle.base.js
+[pid: 18304|app: 0|req: 17/213] 58.135.84.149 () {38 vars in 855 bytes} [Mon Sep  2 08:55:49 2019] GET /static/js/vendor.bundle.base.js => generated 5649 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/images/logo.svg
+[pid: 18302|app: 0|req: 37/214] 58.135.84.149 () {38 vars in 873 bytes} [Mon Sep  2 08:55:49 2019] GET /static/images/logo.svg => generated 5622 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/vendor.bundle.addons.js
+[pid: 18302|app: 0|req: 38/215] 58.135.84.149 () {38 vars in 859 bytes} [Mon Sep  2 08:55:49 2019] GET /static/js/vendor.bundle.addons.js => generated 5655 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/css/style.css
+[pid: 18304|app: 0|req: 18/216] 58.135.84.149 () {38 vars in 848 bytes} [Mon Sep  2 08:55:49 2019] GET /static/css/style.css => generated 5616 bytes in 16 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/off-canvas.js
+[pid: 18301|app: 0|req: 129/217] 58.135.84.149 () {38 vars in 839 bytes} [Mon Sep  2 08:55:49 2019] GET /static/js/off-canvas.js => generated 5625 bytes in 8 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/misc.js
+[pid: 18303|app: 0|req: 33/218] 58.135.84.149 () {38 vars in 827 bytes} [Mon Sep  2 08:55:49 2019] GET /static/js/misc.js => generated 5607 bytes in 7 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18301|app: 0|req: 130/219] 58.135.84.149 () {40 vars in 937 bytes} [Mon Sep  2 08:55:50 2019] GET /login/ => generated 3493 bytes in 16 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+Not Found: /static/css/materialdesignicons.min.css
+[pid: 18302|app: 0|req: 39/220] 58.135.84.149 () {38 vars in 884 bytes} [Mon Sep  2 08:55:50 2019] GET /static/css/materialdesignicons.min.css => generated 5670 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/css/vendor.bundle.base.css
+[pid: 18303|app: 0|req: 34/221] 58.135.84.149 () {38 vars in 874 bytes} [Mon Sep  2 08:55:50 2019] GET /static/css/vendor.bundle.base.css => generated 5655 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/css/style.css
+[pid: 18304|app: 0|req: 19/222] 58.135.84.149 () {38 vars in 848 bytes} [Mon Sep  2 08:55:50 2019] GET /static/css/style.css => generated 5616 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/vendor.bundle.base.js
+[pid: 18304|app: 0|req: 20/223] 58.135.84.149 () {38 vars in 855 bytes} [Mon Sep  2 08:55:50 2019] GET /static/js/vendor.bundle.base.js => generated 5649 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/images/logo.svg
+[pid: 18301|app: 0|req: 131/224] 58.135.84.149 () {38 vars in 873 bytes} [Mon Sep  2 08:55:50 2019] GET /static/images/logo.svg => generated 5622 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/vendor.bundle.addons.js
+[pid: 18304|app: 0|req: 21/225] 58.135.84.149 () {38 vars in 859 bytes} [Mon Sep  2 08:55:50 2019] GET /static/js/vendor.bundle.addons.js => generated 5655 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/off-canvas.js
+[pid: 18301|app: 0|req: 132/226] 58.135.84.149 () {38 vars in 839 bytes} [Mon Sep  2 08:55:50 2019] GET /static/js/off-canvas.js => generated 5625 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/misc.js
+[pid: 18302|app: 0|req: 40/227] 58.135.84.149 () {38 vars in 827 bytes} [Mon Sep  2 08:55:50 2019] GET /static/js/misc.js => generated 5607 bytes in 8 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18301|app: 0|req: 133/228] 58.135.84.149 () {40 vars in 937 bytes} [Mon Sep  2 08:55:50 2019] GET /login/ => generated 3493 bytes in 17 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+Not Found: /static/css/materialdesignicons.min.css
+[pid: 18302|app: 0|req: 41/229] 58.135.84.149 () {38 vars in 884 bytes} [Mon Sep  2 08:55:50 2019] GET /static/css/materialdesignicons.min.css => generated 5670 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/css/style.css
+[pid: 18304|app: 0|req: 22/230] 58.135.84.149 () {38 vars in 848 bytes} [Mon Sep  2 08:55:50 2019] GET /static/css/style.css => generated 5616 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/vendor.bundle.base.js
+[pid: 18303|app: 0|req: 35/231] 58.135.84.149 () {38 vars in 855 bytes} [Mon Sep  2 08:55:50 2019] GET /static/js/vendor.bundle.base.js => generated 5649 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/vendor.bundle.addons.js
+[pid: 18303|app: 0|req: 36/232] 58.135.84.149 () {38 vars in 859 bytes} [Mon Sep  2 08:55:50 2019] GET /static/js/vendor.bundle.addons.js => generated 5655 bytes in 16 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/css/vendor.bundle.base.css
+[pid: 18302|app: 0|req: 42/233] 58.135.84.149 () {38 vars in 874 bytes} [Mon Sep  2 08:55:50 2019] GET /static/css/vendor.bundle.base.css => generated 5655 bytes in 51 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/off-canvas.js
+[pid: 18301|app: 0|req: 134/234] 58.135.84.149 () {38 vars in 839 bytes} [Mon Sep  2 08:55:50 2019] GET /static/js/off-canvas.js => generated 5625 bytes in 7 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18304|app: 0|req: 23/235] 58.135.84.149 () {40 vars in 937 bytes} [Mon Sep  2 08:55:50 2019] GET /login/ => generated 3493 bytes in 96 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+Not Found: /static/js/vendor.bundle.addons.js
+[pid: 18302|app: 0|req: 43/236] 58.135.84.149 () {38 vars in 859 bytes} [Mon Sep  2 08:55:50 2019] GET /static/js/vendor.bundle.addons.js => generated 5655 bytes in 7 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/images/logo.svg
+[pid: 18303|app: 0|req: 37/237] 58.135.84.149 () {38 vars in 873 bytes} [Mon Sep  2 08:55:50 2019] GET /static/images/logo.svg => generated 5622 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/misc.js
+[pid: 18302|app: 0|req: 44/238] 58.135.84.149 () {38 vars in 827 bytes} [Mon Sep  2 08:55:50 2019] GET /static/js/misc.js => generated 5607 bytes in 18 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18301|app: 0|req: 135/239] 58.135.84.149 () {40 vars in 937 bytes} [Mon Sep  2 08:55:50 2019] GET /login/ => generated 3493 bytes in 16 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+Not Found: /static/js/off-canvas.js
+[pid: 18303|app: 0|req: 38/240] 58.135.84.149 () {38 vars in 839 bytes} [Mon Sep  2 08:55:50 2019] GET /static/js/off-canvas.js => generated 5625 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/css/materialdesignicons.min.css
+[pid: 18302|app: 0|req: 45/241] 58.135.84.149 () {38 vars in 884 bytes} [Mon Sep  2 08:55:51 2019] GET /static/css/materialdesignicons.min.css => generated 5670 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/css/vendor.bundle.base.css
+[pid: 18302|app: 0|req: 46/242] 58.135.84.149 () {38 vars in 874 bytes} [Mon Sep  2 08:55:51 2019] GET /static/css/vendor.bundle.base.css => generated 5655 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/css/style.css
+[pid: 18304|app: 0|req: 24/243] 58.135.84.149 () {38 vars in 848 bytes} [Mon Sep  2 08:55:51 2019] GET /static/css/style.css => generated 5616 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/vendor.bundle.base.js
+[pid: 18304|app: 0|req: 25/244] 58.135.84.149 () {38 vars in 855 bytes} [Mon Sep  2 08:55:51 2019] GET /static/js/vendor.bundle.base.js => generated 5649 bytes in 16 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/vendor.bundle.addons.js
+[pid: 18301|app: 0|req: 136/245] 58.135.84.149 () {38 vars in 859 bytes} [Mon Sep  2 08:55:51 2019] GET /static/js/vendor.bundle.addons.js => generated 5655 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18302|app: 0|req: 47/246] 58.135.84.149 () {40 vars in 937 bytes} [Mon Sep  2 08:55:51 2019] GET /login/ => generated 3493 bytes in 63 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+Not Found: /static/js/off-canvas.js
+[pid: 18301|app: 0|req: 137/247] 58.135.84.149 () {38 vars in 839 bytes} [Mon Sep  2 08:55:51 2019] GET /static/js/off-canvas.js => generated 5625 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/images/logo.svg
+[pid: 18303|app: 0|req: 39/248] 58.135.84.149 () {38 vars in 873 bytes} [Mon Sep  2 08:55:51 2019] GET /static/images/logo.svg => generated 5622 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/misc.js
+[pid: 18301|app: 0|req: 138/249] 58.135.84.149 () {38 vars in 827 bytes} [Mon Sep  2 08:55:51 2019] GET /static/js/misc.js => generated 5607 bytes in 11 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/css/vendor.bundle.base.css
+[pid: 18302|app: 0|req: 48/250] 58.135.84.149 () {38 vars in 874 bytes} [Mon Sep  2 08:55:51 2019] GET /static/css/vendor.bundle.base.css => generated 5655 bytes in 23 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/css/materialdesignicons.min.css
+[pid: 18303|app: 0|req: 40/251] 58.135.84.149 () {38 vars in 884 bytes} [Mon Sep  2 08:55:51 2019] GET /static/css/materialdesignicons.min.css => generated 5670 bytes in 12 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/css/style.css
+[pid: 18301|app: 0|req: 139/252] 58.135.84.149 () {38 vars in 848 bytes} [Mon Sep  2 08:55:51 2019] GET /static/css/style.css => generated 5616 bytes in 8 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/vendor.bundle.base.js
+[pid: 18304|app: 0|req: 26/253] 58.135.84.149 () {38 vars in 855 bytes} [Mon Sep  2 08:55:51 2019] GET /static/js/vendor.bundle.base.js => generated 5649 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/vendor.bundle.addons.js
+[pid: 18301|app: 0|req: 140/254] 58.135.84.149 () {38 vars in 859 bytes} [Mon Sep  2 08:55:51 2019] GET /static/js/vendor.bundle.addons.js => generated 5655 bytes in 16 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/images/logo.svg
+[pid: 18304|app: 0|req: 27/255] 58.135.84.149 () {38 vars in 873 bytes} [Mon Sep  2 08:55:51 2019] GET /static/images/logo.svg => generated 5622 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/off-canvas.js
+[pid: 18302|app: 0|req: 49/256] 58.135.84.149 () {38 vars in 839 bytes} [Mon Sep  2 08:55:51 2019] GET /static/js/off-canvas.js => generated 5625 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/misc.js
+[pid: 18303|app: 0|req: 41/257] 58.135.84.149 () {38 vars in 827 bytes} [Mon Sep  2 08:55:51 2019] GET /static/js/misc.js => generated 5607 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/css/style.css
+[pid: 18301|app: 0|req: 141/258] 58.135.84.149 () {38 vars in 848 bytes} [Mon Sep  2 08:55:53 2019] GET /static/css/style.css => generated 5616 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/css/materialdesignicons.min.css
+[pid: 18302|app: 0|req: 50/259] 58.135.84.149 () {38 vars in 884 bytes} [Mon Sep  2 08:55:53 2019] GET /static/css/materialdesignicons.min.css => generated 5670 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/css/vendor.bundle.base.css
+[pid: 18301|app: 0|req: 142/260] 58.135.84.149 () {38 vars in 874 bytes} [Mon Sep  2 08:55:53 2019] GET /static/css/vendor.bundle.base.css => generated 5655 bytes in 11 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18301|app: 0|req: 143/261] 58.135.84.149 () {40 vars in 937 bytes} [Mon Sep  2 08:56:01 2019] GET /login/ => generated 3493 bytes in 16 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+Not Found: /static/css/materialdesignicons.min.css
+[pid: 18302|app: 0|req: 51/262] 58.135.84.149 () {38 vars in 884 bytes} [Mon Sep  2 08:56:01 2019] GET /static/css/materialdesignicons.min.css => generated 5670 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/css/vendor.bundle.base.css
+[pid: 18304|app: 0|req: 28/263] 58.135.84.149 () {38 vars in 874 bytes} [Mon Sep  2 08:56:01 2019] GET /static/css/vendor.bundle.base.css => generated 5655 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/css/style.css
+[pid: 18301|app: 0|req: 144/264] 58.135.84.149 () {38 vars in 848 bytes} [Mon Sep  2 08:56:01 2019] GET /static/css/style.css => generated 5616 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/images/logo.svg
+[pid: 18302|app: 0|req: 52/265] 58.135.84.149 () {38 vars in 873 bytes} [Mon Sep  2 08:56:01 2019] GET /static/images/logo.svg => generated 5622 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/vendor.bundle.addons.js
+[pid: 18302|app: 0|req: 53/266] 58.135.84.149 () {38 vars in 859 bytes} [Mon Sep  2 08:56:01 2019] GET /static/js/vendor.bundle.addons.js => generated 5655 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/vendor.bundle.base.js
+[pid: 18301|app: 0|req: 145/267] 58.135.84.149 () {38 vars in 855 bytes} [Mon Sep  2 08:56:01 2019] GET /static/js/vendor.bundle.base.js => generated 5649 bytes in 16 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/off-canvas.js
+[pid: 18303|app: 0|req: 42/268] 58.135.84.149 () {38 vars in 839 bytes} [Mon Sep  2 08:56:01 2019] GET /static/js/off-canvas.js => generated 5625 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/misc.js
+[pid: 18303|app: 0|req: 43/269] 58.135.84.149 () {38 vars in 827 bytes} [Mon Sep  2 08:56:01 2019] GET /static/js/misc.js => generated 5607 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/vendor.bundle.addons.js
+[pid: 18301|app: 0|req: 146/270] 58.135.84.149 () {38 vars in 859 bytes} [Mon Sep  2 08:56:02 2019] GET /static/js/vendor.bundle.addons.js => generated 5655 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/off-canvas.js
+[pid: 18302|app: 0|req: 54/271] 58.135.84.149 () {38 vars in 839 bytes} [Mon Sep  2 08:56:02 2019] GET /static/js/off-canvas.js => generated 5625 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/misc.js
+[pid: 18303|app: 0|req: 44/272] 58.135.84.149 () {38 vars in 827 bytes} [Mon Sep  2 08:56:02 2019] GET /static/js/misc.js => generated 5607 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18301|app: 0|req: 147/273] 58.135.84.149 () {40 vars in 937 bytes} [Mon Sep  2 08:56:03 2019] GET /login/ => generated 3493 bytes in 15 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+Not Found: /static/css/materialdesignicons.min.css
+[pid: 18302|app: 0|req: 55/274] 58.135.84.149 () {38 vars in 884 bytes} [Mon Sep  2 08:56:03 2019] GET /static/css/materialdesignicons.min.css => generated 5670 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/css/vendor.bundle.base.css
+[pid: 18303|app: 0|req: 45/275] 58.135.84.149 () {38 vars in 874 bytes} [Mon Sep  2 08:56:03 2019] GET /static/css/vendor.bundle.base.css => generated 5655 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/css/style.css
+[pid: 18304|app: 0|req: 29/276] 58.135.84.149 () {38 vars in 848 bytes} [Mon Sep  2 08:56:03 2019] GET /static/css/style.css => generated 5616 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/vendor.bundle.addons.js
+[pid: 18301|app: 0|req: 148/277] 58.135.84.149 () {38 vars in 859 bytes} [Mon Sep  2 08:56:03 2019] GET /static/js/vendor.bundle.addons.js => generated 5655 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/vendor.bundle.base.js
+[pid: 18301|app: 0|req: 149/278] 58.135.84.149 () {38 vars in 855 bytes} [Mon Sep  2 08:56:03 2019] GET /static/js/vendor.bundle.base.js => generated 5649 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/off-canvas.js
+[pid: 18302|app: 0|req: 56/279] 58.135.84.149 () {38 vars in 839 bytes} [Mon Sep  2 08:56:04 2019] GET /static/js/off-canvas.js => generated 5625 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/misc.js
+[pid: 18303|app: 0|req: 46/280] 58.135.84.149 () {38 vars in 827 bytes} [Mon Sep  2 08:56:04 2019] GET /static/js/misc.js => generated 5607 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/vendor.bundle.addons.js
+[pid: 18304|app: 0|req: 30/281] 58.135.84.149 () {38 vars in 859 bytes} [Mon Sep  2 08:56:04 2019] GET /static/js/vendor.bundle.addons.js => generated 5655 bytes in 11 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/images/logo.svg
+[pid: 18301|app: 0|req: 150/282] 58.135.84.149 () {38 vars in 873 bytes} [Mon Sep  2 08:56:04 2019] GET /static/images/logo.svg => generated 5622 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/off-canvas.js
+[pid: 18302|app: 0|req: 57/283] 58.135.84.149 () {38 vars in 839 bytes} [Mon Sep  2 08:56:04 2019] GET /static/js/off-canvas.js => generated 5625 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/misc.js
+[pid: 18301|app: 0|req: 151/284] 58.135.84.149 () {38 vars in 827 bytes} [Mon Sep  2 08:56:04 2019] GET /static/js/misc.js => generated 5607 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18301|app: 0|req: 152/285] 58.135.84.149 () {40 vars in 937 bytes} [Mon Sep  2 08:56:05 2019] GET /login/ => generated 3493 bytes in 16 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+Not Found: /static/css/materialdesignicons.min.css
+[pid: 18301|app: 0|req: 153/286] 58.135.84.149 () {38 vars in 884 bytes} [Mon Sep  2 08:56:05 2019] GET /static/css/materialdesignicons.min.css => generated 5670 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/css/style.css
+[pid: 18303|app: 0|req: 47/287] 58.135.84.149 () {38 vars in 848 bytes} [Mon Sep  2 08:56:05 2019] GET /static/css/style.css => generated 5616 bytes in 7 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/vendor.bundle.addons.js
+[pid: 18304|app: 0|req: 31/288] 58.135.84.149 () {38 vars in 857 bytes} [Mon Sep  2 08:56:05 2019] GET /static/js/vendor.bundle.addons.js => generated 5655 bytes in 7 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/vendor.bundle.base.js
+[pid: 18302|app: 0|req: 58/289] 58.135.84.149 () {38 vars in 855 bytes} [Mon Sep  2 08:56:05 2019] GET /static/js/vendor.bundle.base.js => generated 5649 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/css/vendor.bundle.base.css
+[pid: 18303|app: 0|req: 48/290] 58.135.84.149 () {38 vars in 872 bytes} [Mon Sep  2 08:56:05 2019] GET /static/css/vendor.bundle.base.css => generated 5655 bytes in 27 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/images/logo.svg
+[pid: 18304|app: 0|req: 32/291] 58.135.84.149 () {38 vars in 871 bytes} [Mon Sep  2 08:56:05 2019] GET /static/images/logo.svg => generated 5622 bytes in 22 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/off-canvas.js
+[pid: 18301|app: 0|req: 154/292] 58.135.84.149 () {38 vars in 837 bytes} [Mon Sep  2 08:56:05 2019] GET /static/js/off-canvas.js => generated 5625 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/vendor.bundle.addons.js
+[pid: 18301|app: 0|req: 155/293] 58.135.84.149 () {38 vars in 858 bytes} [Mon Sep  2 08:56:05 2019] GET /static/js/vendor.bundle.addons.js => generated 5655 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/misc.js
+[pid: 18304|app: 0|req: 33/294] 58.135.84.149 () {38 vars in 826 bytes} [Mon Sep  2 08:56:05 2019] GET /static/js/misc.js => generated 5607 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/off-canvas.js
+[pid: 18302|app: 0|req: 59/295] 58.135.84.149 () {38 vars in 838 bytes} [Mon Sep  2 08:56:05 2019] GET /static/js/off-canvas.js => generated 5625 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/misc.js
+[pid: 18301|app: 0|req: 156/296] 58.135.84.149 () {38 vars in 826 bytes} [Mon Sep  2 08:56:05 2019] GET /static/js/misc.js => generated 5607 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18301|app: 0|req: 157/297] 58.135.84.149 () {40 vars in 936 bytes} [Mon Sep  2 08:56:06 2019] GET /login/ => generated 3493 bytes in 15 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+Not Found: /static/css/materialdesignicons.min.css
+[pid: 18302|app: 0|req: 60/298] 58.135.84.149 () {38 vars in 883 bytes} [Mon Sep  2 08:56:06 2019] GET /static/css/materialdesignicons.min.css => generated 5670 bytes in 11 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/css/vendor.bundle.base.css
+[pid: 18301|app: 0|req: 158/299] 58.135.84.149 () {38 vars in 873 bytes} [Mon Sep  2 08:56:06 2019] GET /static/css/vendor.bundle.base.css => generated 5655 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/css/style.css
+[pid: 18304|app: 0|req: 34/300] 58.135.84.149 () {38 vars in 847 bytes} [Mon Sep  2 08:56:06 2019] GET /static/css/style.css => generated 5616 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/vendor.bundle.base.js
+[pid: 18303|app: 0|req: 49/301] 58.135.84.149 () {38 vars in 854 bytes} [Mon Sep  2 08:56:06 2019] GET /static/js/vendor.bundle.base.js => generated 5649 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/images/logo.svg
+[pid: 18302|app: 0|req: 61/302] 58.135.84.149 () {38 vars in 872 bytes} [Mon Sep  2 08:56:06 2019] GET /static/images/logo.svg => generated 5622 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/vendor.bundle.addons.js
+[pid: 18303|app: 0|req: 50/303] 58.135.84.149 () {38 vars in 858 bytes} [Mon Sep  2 08:56:06 2019] GET /static/js/vendor.bundle.addons.js => generated 5655 bytes in 16 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/off-canvas.js
+[pid: 18301|app: 0|req: 159/304] 58.135.84.149 () {38 vars in 838 bytes} [Mon Sep  2 08:56:06 2019] GET /static/js/off-canvas.js => generated 5625 bytes in 8 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/misc.js
+[pid: 18304|app: 0|req: 35/305] 58.135.84.149 () {38 vars in 826 bytes} [Mon Sep  2 08:56:06 2019] GET /static/js/misc.js => generated 5607 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/vendor.bundle.addons.js
+[pid: 18301|app: 0|req: 160/306] 58.135.84.149 () {38 vars in 858 bytes} [Mon Sep  2 08:56:07 2019] GET /static/js/vendor.bundle.addons.js => generated 5655 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/off-canvas.js
+[pid: 18303|app: 0|req: 51/307] 58.135.84.149 () {38 vars in 838 bytes} [Mon Sep  2 08:56:07 2019] GET /static/js/off-canvas.js => generated 5625 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/misc.js
+[pid: 18301|app: 0|req: 161/308] 58.135.84.149 () {38 vars in 826 bytes} [Mon Sep  2 08:56:07 2019] GET /static/js/misc.js => generated 5607 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Sep  2 17:01:19 2019] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-36) on 27 August 2019 03:56:03
+os: Linux-3.10.0-957.21.3.el7.x86_64 #1 SMP Tue Jun 18 16:35:19 UTC 2019
+nodename: instance-q8e0uqyg
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /abc
+writing pidfile to /abc/uwsgi_pid.log
+detected binary path: /usr/local/python3/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /abc
+your processes number limit is 7914
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+!!! no /etc/mime.types file found !!!
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (:8000).
+bind(): Address already in use [core/socket.c line 769]
+[pid: 18301|app: 0|req: 162/309] 58.135.84.149 () {40 vars in 937 bytes} [Mon Sep  2 09:01:25 2019] GET /login/ => generated 3493 bytes in 15 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+Not Found: /static/css/materialdesignicons.min.css
+[pid: 18302|app: 0|req: 62/310] 58.135.84.149 () {38 vars in 884 bytes} [Mon Sep  2 09:01:25 2019] GET /static/css/materialdesignicons.min.css => generated 5670 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/css/vendor.bundle.base.css
+[pid: 18303|app: 0|req: 52/311] 58.135.84.149 () {38 vars in 874 bytes} [Mon Sep  2 09:01:25 2019] GET /static/css/vendor.bundle.base.css => generated 5655 bytes in 8 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/css/style.css
+[pid: 18304|app: 0|req: 36/312] 58.135.84.149 () {38 vars in 848 bytes} [Mon Sep  2 09:01:25 2019] GET /static/css/style.css => generated 5616 bytes in 8 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/vendor.bundle.base.js
+[pid: 18301|app: 0|req: 163/313] 58.135.84.149 () {38 vars in 855 bytes} [Mon Sep  2 09:01:25 2019] GET /static/js/vendor.bundle.base.js => generated 5649 bytes in 8 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/vendor.bundle.addons.js
+[pid: 18301|app: 0|req: 164/314] 58.135.84.149 () {38 vars in 859 bytes} [Mon Sep  2 09:01:25 2019] GET /static/js/vendor.bundle.addons.js => generated 5655 bytes in 8 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/off-canvas.js
+[pid: 18302|app: 0|req: 63/315] 58.135.84.149 () {38 vars in 839 bytes} [Mon Sep  2 09:01:25 2019] GET /static/js/off-canvas.js => generated 5625 bytes in 7 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/images/logo.svg
+[pid: 18303|app: 0|req: 53/316] 58.135.84.149 () {38 vars in 873 bytes} [Mon Sep  2 09:01:25 2019] GET /static/images/logo.svg => generated 5622 bytes in 7 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/misc.js
+[pid: 18302|app: 0|req: 64/317] 58.135.84.149 () {38 vars in 827 bytes} [Mon Sep  2 09:01:25 2019] GET /static/js/misc.js => generated 5607 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18301|app: 0|req: 165/318] 58.135.84.149 () {40 vars in 937 bytes} [Mon Sep  2 09:01:27 2019] GET /login/ => generated 3493 bytes in 15 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+Not Found: /static/css/materialdesignicons.min.css
+[pid: 18301|app: 0|req: 166/319] 58.135.84.149 () {38 vars in 884 bytes} [Mon Sep  2 09:01:27 2019] GET /static/css/materialdesignicons.min.css => generated 5670 bytes in 8 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/css/vendor.bundle.base.css
+[pid: 18304|app: 0|req: 37/320] 58.135.84.149 () {38 vars in 874 bytes} [Mon Sep  2 09:01:27 2019] GET /static/css/vendor.bundle.base.css => generated 5655 bytes in 7 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/vendor.bundle.addons.js
+[pid: 18303|app: 0|req: 54/321] 58.135.84.149 () {38 vars in 859 bytes} [Mon Sep  2 09:01:27 2019] GET /static/js/vendor.bundle.addons.js => generated 5655 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/images/logo.svg
+[pid: 18302|app: 0|req: 65/322] 58.135.84.149 () {38 vars in 873 bytes} [Mon Sep  2 09:01:27 2019] GET /static/images/logo.svg => generated 5622 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/css/style.css
+[pid: 18304|app: 0|req: 38/323] 58.135.84.149 () {38 vars in 848 bytes} [Mon Sep  2 09:01:27 2019] GET /static/css/style.css => generated 5616 bytes in 25 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/vendor.bundle.base.js
+[pid: 18303|app: 0|req: 55/324] 58.135.84.149 () {38 vars in 855 bytes} [Mon Sep  2 09:01:27 2019] GET /static/js/vendor.bundle.base.js => generated 5649 bytes in 17 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/off-canvas.js
+[pid: 18302|app: 0|req: 66/325] 58.135.84.149 () {38 vars in 839 bytes} [Mon Sep  2 09:01:27 2019] GET /static/js/off-canvas.js => generated 5625 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/vendor.bundle.addons.js
+[pid: 18301|app: 0|req: 167/326] 58.135.84.149 () {38 vars in 859 bytes} [Mon Sep  2 09:01:27 2019] GET /static/js/vendor.bundle.addons.js => generated 5655 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/misc.js
+[pid: 18301|app: 0|req: 168/327] 58.135.84.149 () {38 vars in 827 bytes} [Mon Sep  2 09:01:27 2019] GET /static/js/misc.js => generated 5607 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/off-canvas.js
+[pid: 18303|app: 0|req: 56/328] 58.135.84.149 () {38 vars in 839 bytes} [Mon Sep  2 09:01:27 2019] GET /static/js/off-canvas.js => generated 5625 bytes in 8 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/misc.js
+[pid: 18302|app: 0|req: 67/329] 58.135.84.149 () {38 vars in 827 bytes} [Mon Sep  2 09:01:27 2019] GET /static/js/misc.js => generated 5607 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18301|app: 0|req: 169/330] 58.135.84.149 () {40 vars in 937 bytes} [Mon Sep  2 09:01:28 2019] GET /login/ => generated 3493 bytes in 15 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+Not Found: /static/css/materialdesignicons.min.css
+[pid: 18302|app: 0|req: 68/331] 58.135.84.149 () {38 vars in 884 bytes} [Mon Sep  2 09:01:28 2019] GET /static/css/materialdesignicons.min.css => generated 5670 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/css/vendor.bundle.base.css
+[pid: 18303|app: 0|req: 57/332] 58.135.84.149 () {38 vars in 874 bytes} [Mon Sep  2 09:01:28 2019] GET /static/css/vendor.bundle.base.css => generated 5655 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/vendor.bundle.base.js
+[pid: 18304|app: 0|req: 39/333] 58.135.84.149 () {38 vars in 855 bytes} [Mon Sep  2 09:01:28 2019] GET /static/js/vendor.bundle.base.js => generated 5649 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/images/logo.svg
+[pid: 18301|app: 0|req: 170/334] 58.135.84.149 () {38 vars in 873 bytes} [Mon Sep  2 09:01:28 2019] GET /static/images/logo.svg => generated 5622 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/css/style.css
+[pid: 18303|app: 0|req: 58/335] 58.135.84.149 () {38 vars in 848 bytes} [Mon Sep  2 09:01:28 2019] GET /static/css/style.css => generated 5616 bytes in 24 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/vendor.bundle.addons.js
+[pid: 18301|app: 0|req: 171/336] 58.135.84.149 () {38 vars in 859 bytes} [Mon Sep  2 09:01:28 2019] GET /static/js/vendor.bundle.addons.js => generated 5655 bytes in 7 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/off-canvas.js
+[pid: 18302|app: 0|req: 69/337] 58.135.84.149 () {38 vars in 839 bytes} [Mon Sep  2 09:01:28 2019] GET /static/js/off-canvas.js => generated 5625 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/misc.js
+[pid: 18301|app: 0|req: 172/338] 58.135.84.149 () {38 vars in 827 bytes} [Mon Sep  2 09:01:28 2019] GET /static/js/misc.js => generated 5607 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/css/materialdesignicons.min.css
+[pid: 18301|app: 0|req: 173/339] 58.135.84.149 () {38 vars in 884 bytes} [Mon Sep  2 09:01:29 2019] GET /static/css/materialdesignicons.min.css => generated 5670 bytes in 8 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/css/vendor.bundle.base.css
+[pid: 18303|app: 0|req: 59/340] 58.135.84.149 () {38 vars in 874 bytes} [Mon Sep  2 09:01:29 2019] GET /static/css/vendor.bundle.base.css => generated 5655 bytes in 7 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/css/style.css
+[pid: 18302|app: 0|req: 70/341] 58.135.84.149 () {38 vars in 848 bytes} [Mon Sep  2 09:01:29 2019] GET /static/css/style.css => generated 5616 bytes in 7 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/vendor.bundle.addons.js
+[pid: 18303|app: 0|req: 60/342] 58.135.84.149 () {38 vars in 859 bytes} [Mon Sep  2 09:01:29 2019] GET /static/js/vendor.bundle.addons.js => generated 5655 bytes in 7 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/vendor.bundle.base.js
+[pid: 18302|app: 0|req: 71/343] 58.135.84.149 () {38 vars in 855 bytes} [Mon Sep  2 09:01:29 2019] GET /static/js/vendor.bundle.base.js => generated 5649 bytes in 19 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/images/logo.svg
+[pid: 18303|app: 0|req: 61/344] 58.135.84.149 () {38 vars in 873 bytes} [Mon Sep  2 09:01:29 2019] GET /static/images/logo.svg => generated 5622 bytes in 12 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/off-canvas.js
+[pid: 18301|app: 0|req: 174/345] 58.135.84.149 () {38 vars in 839 bytes} [Mon Sep  2 09:01:29 2019] GET /static/js/off-canvas.js => generated 5625 bytes in 8 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/vendor.bundle.addons.js
+[pid: 18304|app: 0|req: 40/346] 58.135.84.149 () {38 vars in 859 bytes} [Mon Sep  2 09:01:29 2019] GET /static/js/vendor.bundle.addons.js => generated 5655 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/misc.js
+[pid: 18303|app: 0|req: 62/347] 58.135.84.149 () {38 vars in 827 bytes} [Mon Sep  2 09:01:29 2019] GET /static/js/misc.js => generated 5607 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/off-canvas.js
+[pid: 18302|app: 0|req: 72/348] 58.135.84.149 () {38 vars in 839 bytes} [Mon Sep  2 09:01:29 2019] GET /static/js/off-canvas.js => generated 5625 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/misc.js
+[pid: 18301|app: 0|req: 175/349] 58.135.84.149 () {38 vars in 827 bytes} [Mon Sep  2 09:01:29 2019] GET /static/js/misc.js => generated 5607 bytes in 8 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 18301|app: 0|req: 176/350] 58.135.84.149 () {38 vars in 845 bytes} [Mon Sep  2 09:01:30 2019] GET /favicon.ico => generated 5589 bytes in 8 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/css/materialdesignicons.min.css
+[pid: 18301|app: 0|req: 177/351] 58.135.84.149 () {38 vars in 884 bytes} [Mon Sep  2 09:01:31 2019] GET /static/css/materialdesignicons.min.css => generated 5670 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/css/vendor.bundle.base.css
+[pid: 18303|app: 0|req: 63/352] 58.135.84.149 () {38 vars in 874 bytes} [Mon Sep  2 09:01:31 2019] GET /static/css/vendor.bundle.base.css => generated 5655 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/vendor.bundle.base.js
+[pid: 18302|app: 0|req: 73/353] 58.135.84.149 () {38 vars in 855 bytes} [Mon Sep  2 09:01:31 2019] GET /static/js/vendor.bundle.base.js => generated 5649 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/vendor.bundle.addons.js
+[pid: 18304|app: 0|req: 41/354] 58.135.84.149 () {38 vars in 859 bytes} [Mon Sep  2 09:01:31 2019] GET /static/js/vendor.bundle.addons.js => generated 5655 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/css/style.css
+[pid: 18302|app: 0|req: 74/355] 58.135.84.149 () {38 vars in 848 bytes} [Mon Sep  2 09:01:31 2019] GET /static/css/style.css => generated 5616 bytes in 19 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/images/logo.svg
+[pid: 18304|app: 0|req: 42/356] 58.135.84.149 () {38 vars in 873 bytes} [Mon Sep  2 09:01:31 2019] GET /static/images/logo.svg => generated 5622 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/off-canvas.js
+[pid: 18301|app: 0|req: 178/357] 58.135.84.149 () {38 vars in 839 bytes} [Mon Sep  2 09:01:31 2019] GET /static/js/off-canvas.js => generated 5625 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/vendor.bundle.addons.js
+[pid: 18303|app: 0|req: 64/358] 58.135.84.149 () {38 vars in 859 bytes} [Mon Sep  2 09:01:31 2019] GET /static/js/vendor.bundle.addons.js => generated 5655 bytes in 7 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/misc.js
+[pid: 18304|app: 0|req: 43/359] 58.135.84.149 () {38 vars in 827 bytes} [Mon Sep  2 09:01:31 2019] GET /static/js/misc.js => generated 5607 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/off-canvas.js
+[pid: 18301|app: 0|req: 179/360] 58.135.84.149 () {38 vars in 839 bytes} [Mon Sep  2 09:01:31 2019] GET /static/js/off-canvas.js => generated 5625 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18301|app: 0|req: 180/361] 58.135.84.149 () {40 vars in 937 bytes} [Mon Sep  2 09:01:48 2019] GET /login/ => generated 3493 bytes in 18 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+Not Found: /static/css/materialdesignicons.min.css
+[pid: 18302|app: 0|req: 75/362] 58.135.84.149 () {38 vars in 884 bytes} [Mon Sep  2 09:01:48 2019] GET /static/css/materialdesignicons.min.css => generated 5670 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/css/vendor.bundle.base.css
+[pid: 18304|app: 0|req: 44/363] 58.135.84.149 () {38 vars in 874 bytes} [Mon Sep  2 09:01:49 2019] GET /static/css/vendor.bundle.base.css => generated 5655 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/vendor.bundle.addons.js
+[pid: 18303|app: 0|req: 65/364] 58.135.84.149 () {38 vars in 859 bytes} [Mon Sep  2 09:01:49 2019] GET /static/js/vendor.bundle.addons.js => generated 5655 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/vendor.bundle.base.js
+[pid: 18303|app: 0|req: 66/365] 58.135.84.149 () {38 vars in 855 bytes} [Mon Sep  2 09:01:49 2019] GET /static/js/vendor.bundle.base.js => generated 5649 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/css/style.css
+[pid: 18304|app: 0|req: 45/366] 58.135.84.149 () {38 vars in 848 bytes} [Mon Sep  2 09:01:49 2019] GET /static/css/style.css => generated 5616 bytes in 17 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/images/logo.svg
+[pid: 18303|app: 0|req: 67/367] 58.135.84.149 () {38 vars in 873 bytes} [Mon Sep  2 09:01:49 2019] GET /static/images/logo.svg => generated 5622 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/off-canvas.js
+[pid: 18301|app: 0|req: 181/368] 58.135.84.149 () {38 vars in 839 bytes} [Mon Sep  2 09:01:49 2019] GET /static/js/off-canvas.js => generated 5625 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/vendor.bundle.addons.js
+[pid: 18302|app: 0|req: 76/369] 58.135.84.149 () {38 vars in 859 bytes} [Mon Sep  2 09:01:49 2019] GET /static/js/vendor.bundle.addons.js => generated 5655 bytes in 7 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/misc.js
+[pid: 18304|app: 0|req: 46/370] 58.135.84.149 () {38 vars in 827 bytes} [Mon Sep  2 09:01:49 2019] GET /static/js/misc.js => generated 5607 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/off-canvas.js
+[pid: 18301|app: 0|req: 182/371] 58.135.84.149 () {38 vars in 839 bytes} [Mon Sep  2 09:01:49 2019] GET /static/js/off-canvas.js => generated 5625 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/misc.js
+[pid: 18303|app: 0|req: 68/372] 58.135.84.149 () {38 vars in 827 bytes} [Mon Sep  2 09:01:49 2019] GET /static/js/misc.js => generated 5607 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'instance-q8e0uqyg:8000'. You may need to add 'instance-q8e0uqyg' to ALLOWED_HOSTS.
+Bad Request: /mnt/custom/ProductDefinition
+[pid: 18301|app: 0|req: 183/373] 187.188.33.29 () {22 vars in 285 bytes} [Mon Sep  2 09:38:59 2019] GET ../../mnt/custom/ProductDefinition => generated 54293 bytes in 57 msecs (HTTP 400) 1 headers in 49 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'www.baidu.com'. You may need to add 'www.baidu.com' to ALLOWED_HOSTS.
+Bad Request: /http:/www.baidu.com/cache/global/img/gs.gif
+[pid: 18301|app: 0|req: 184/374] 80.82.70.187 () {28 vars in 420 bytes} [Mon Sep  2 09:40:01 2019] GET http://www.baidu.com/cache/global/img/gs.gif => generated 54790 bytes in 64 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+[uwsgi-http key: www.baidu.com client_addr: 80.82.70.187 client_port: 16295] hr_write(): Connection reset by peer [plugins/http/http.c line 565]
+Invalid HTTP_HOST header: 'instance-q8e0uqyg:8000'. You may need to add 'instance-q8e0uqyg' to ALLOWED_HOSTS.
+Bad Request: /mnt/custom/ProductDefinition
+[pid: 18301|app: 0|req: 185/375] 113.173.28.193 () {22 vars in 285 bytes} [Mon Sep  2 09:56:37 2019] GET ../../mnt/custom/ProductDefinition => generated 54293 bytes in 33 msecs (HTTP 400) 1 headers in 49 bytes (1 switches on core 0)
