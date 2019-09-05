@@ -17,6 +17,8 @@ from django.contrib import admin
 from django.urls import path
 from sign import views
 from django.conf.urls import url
+from django.conf.urls.static import static
+from django.conf import settings
 
 urlpatterns = [
     # route包含URL模式的字符串, view调用指定的视图函数
@@ -61,5 +63,5 @@ urlpatterns = [
     url(r'^update_test_case_action_ajax/', views.fix_test_case_action),  # 修改和新建动作
     path('get_port_value/', views.get_port_value),  # 获取port_value
 
-]
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
